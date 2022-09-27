@@ -1,0 +1,67 @@
+[
+    {
+        "hotelName": "Hotel 1",
+        "hotelPhone": "Phone 1",
+        "hotelEmail": "hotel1@email.com",
+        "hotelAddress": "Address 1",
+        "hotelCity": "City 1",
+        "hotelState": "State 1",
+        "hotelCountry": "Country 1",
+        "isFeatured": true,
+        "coordinates": [
+            20.301933,
+            85.860788
+        ],
+        "ratingsAverage": 4.5,
+        "ratingsQuantity": 100,
+        "hotelDescription": "loremAd incididunt veniam occaecat do amet. Fugiat mollit velit irure eu elit officia est consectetur non pariatur commodo laboris aliquip. Ex magna aute dolor ea dolore. Do deserunt cillum dolor est ea do. Do aute duis magna amet enim consequat irure aliqua ex do consectetur. Labore occaecat duis anim esse ex proident.",
+        "hotelImages": [
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        ],
+        "rooms": [
+            {
+                "name": "Room 1",
+                "price": 100,
+                "availability": 10
+            },
+            {
+                "name": "Room 2",
+                "price": 200,
+                "availability": 20
+            }
+        ]
+    },
+    {
+        "hotelName": "Hotel 2",
+        "hotelAddress": "Address 2",
+        "hotelCity": "City 2",
+        "hotelState": "State 2",
+        "hotelCountry": "Country 2",
+        "hotelPhone": "Phone 2",
+        "isFeatured": true,
+        "coordinates": [
+            20.301933,
+            85.860788
+        ],
+        "hotelDescription": "loremAd incididunt veniam occaecat do amet. Fugiat mollit velit irure eu elit officia est consectetur non pariatur commodo laboris aliquip. Ex magna aute dolor ea dolore. Do deserunt cillum dolor est ea do. Do aute duis magna amet enim consequat irure aliqua ex do consectetur. Labore occaecat duis anim esse ex proident.",
+        "hotelImages": [
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        ],
+        "ratingsAverage": 4.5,
+        "ratingsQuantity": 100,
+        "rooms": [
+            {
+                "name": "Room 1",
+                "price": 100,
+                "availability": 10
+            },
+            {
+                "name": "Room 2",
+                "price": 200,
+                "availability": 20
+            }
+        ]
+    }
+]
