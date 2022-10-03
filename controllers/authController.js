@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { promisify } = require('util');
 const dotenv = require('dotenv');
+const AppError = require('./../utils/appError');
 
 dotenv.config({ path: './.env' })
 
@@ -32,6 +33,16 @@ const createSendToken = (user, statusCode, res) => {
     });
 };
 
+exports.logout = (req, res) => {
+    res.cookie('jwt', 'loggedout', {
+        expires: new Date(Date.now() + 10 * 1000),
+        httpOnly: true
+    });
+    res.status(200).json({
+        status: 'success'
+    });
+}
+
 exports.signup = async (req, res, next) => {
 
     const newUser = await User.create({
@@ -49,13 +60,13 @@ exports.login = async (req, res, next) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
-        return next(new Error('Please provide an email address and password', 400));
+        return next(new AppError('Please provide an email address and password', 400));
     }
 
     const user = await User.findOne({ email }).select('+password');
 
     if (!user || !(await user.correctPassword(password, user.password))) {
-        return next(new Error('Incorrect email or password provided', 401));
+        return next(new AppError('Incorrect email or password provided', 401));
     }
 
     createSendToken(user, 200, res);
@@ -75,7 +86,7 @@ exports.protect = async (req, res, next) => {
     }
 
     if (!token) {
-        return next(new Error('You are not allowed to access this page. Please login.'));
+        return next(new AppError('You are not allowed to access this page. Please login.'));
     }
 
     // 2) Verification token
@@ -85,19 +96,37 @@ exports.protect = async (req, res, next) => {
     } catch (e) {
         console.log(e);
     }
-    console.log(decodedToken);
+    // console.log(decodedToken);
 
     // 3) Check if user still exists
     const freshUser = await User.findById(decodedToken.id);
     if (!freshUser)
-        return next(new Error('The user belonging to this token no longer exists.'));
+        return next(new AppError('The user belonging to this token no longer exists.'));
 
     // 4) Check if user changed password after JWT was issued
     if (freshUser.changedPasswordAfter(decodedToken.iat))
-        return next(new Error('User recently changed password! Please log in again'));
+        return next(new AppError('User recently changed password! Please log in again'));
 
     // Access granted to the protected route
     req.user = freshUser;
     res.locals.user = freshUser;
     next();
 };
+
+exports.updatePassword = async (req, res, next) => {
+    // 1) get user from collection
+    const user = await User.findById(req.user.id).select('+password')
+
+    // 2) Check if posted password is correct
+    if (!(await user.correctPassword(req.body.passwordCurrent, user.password))) {
+        return next(new AppError('Your current password is wrong'));
+    }
+
+    // 3) If so, update password
+    user.password = req.body.password;
+    user.passwordConfirm = req.body.passwordConfirm;
+    await user.save();
+
+    // 4) Log the user in & send JWT
+    createSendToken(user, 200, res);
+}

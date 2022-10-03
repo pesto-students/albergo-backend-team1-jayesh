@@ -1,5 +1,5 @@
 const User = require('./../models/userModel');
-
+const AppError = require('./../utils/appError');
 
 exports.getMe = (req, res, next) => {
     req.params.id = req.user.id;
