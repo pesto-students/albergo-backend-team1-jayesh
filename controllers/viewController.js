@@ -10,5 +10,9 @@ exports.getOverview = async (req, res, next) => {
     //     title: 'All Hotels',
     //     hotels
     // });
-    res.status(200).send(featuredHotels);
+    const hotelView = {
+        featuredHotels,
+        topRatedHotels
+    }
+    res.status(200).send(hotelView);
 }
