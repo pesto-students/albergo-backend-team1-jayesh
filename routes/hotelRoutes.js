@@ -3,7 +3,7 @@ const hotelController = require('./../controllers/hotelController');
 
 const router = express.Router();
 
-router.post('/onboard', hotelController.sendHotels);
+router.post('/onboard', hotelController.createHotel);
 
 router.post('/searchByCity', hotelController.searchByCity);
 
