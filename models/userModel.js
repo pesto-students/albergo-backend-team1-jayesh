@@ -33,10 +33,14 @@ const userSchema = new mongoose.Schema({
             message: "Passwords don't match"
         }
     },
+    passwordChangedAt: Date,
     role: {
         type: String,
         enum: ['User', 'Employee']
     },
+    wishlist: [String],
+    bookings: [String],
+    reviews: [String],
     active: {
         type: Boolean,
         default: true,

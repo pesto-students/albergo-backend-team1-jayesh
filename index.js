@@ -27,6 +27,6 @@ app.use('/api/users', userRouter);
 
 app.use('/hotel', hotelRouter);
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('listening on port 8080');
 });

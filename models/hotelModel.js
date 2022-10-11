@@ -90,8 +90,8 @@ const hotelSchema = new mongoose.Schema({
 
 // Document middleware
 hotelSchema.pre('save', function (next) {
-    // this.slug = slugify(this.name, { lower: true });
-    this.slug = slugify(this.name.concat(this.id), { lower: true });
+    this.slug = slugify(this.id, { lower: true });
+    // this.slug = slugify(this.name.concat(this.id), { lower: true });
     next();
 });
 

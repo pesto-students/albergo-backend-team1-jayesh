@@ -56,22 +56,34 @@ exports.signup = async (req, res, next) => {
     createSendToken(newUser, 201, res);
 }
 
+exports.checkEmail = async (req, res, next) => {
+    const email = req.body.email;
+    const user = await User.findOne(email);
+    if (user) {
+        res.status(200).json({
+            status: 'success',
+            message: 'Email valid'
+        });
+    } else {
+        return next(new AppError('No user found with this email', 404, res));
+    }
+};
+
 exports.login = async (req, res, next) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
-        return next(new AppError('Please provide an email address and password', 400));
+        return next(new AppError('Please provide an email address and password', 400, res));
     }
 
     const user = await User.findOne({ email }).select('+password');
 
     if (!user || !(await user.correctPassword(password, user.password))) {
-        return next(new AppError('Incorrect email or password provided', 401));
+        return next(new AppError('Incorrect email or password provided', 401, res));
     }
 
     createSendToken(user, 200, res);
 }
-
 
 exports.protect = async (req, res, next) => {
     // 1) Get the token and check if its there
@@ -86,7 +98,7 @@ exports.protect = async (req, res, next) => {
     }
 
     if (!token) {
-        return next(new AppError('You are not allowed to access this page. Please login.'));
+        return next(new AppError('You are not allowed to access this page. Please login.', 401, res));
     }
 
     // 2) Verification token
@@ -96,16 +108,17 @@ exports.protect = async (req, res, next) => {
     } catch (e) {
         console.log(e);
     }
-    // console.log(decodedToken);
 
     // 3) Check if user still exists
     const freshUser = await User.findById(decodedToken.id);
-    if (!freshUser)
-        return next(new AppError('The user belonging to this token no longer exists.'));
+    if (!freshUser) {
+        return next(new AppError('The user belonging to this token no longer exists.', 400, res));
+    }
 
     // 4) Check if user changed password after JWT was issued
-    if (freshUser.changedPasswordAfter(decodedToken.iat))
-        return next(new AppError('User recently changed password! Please log in again'));
+    if (freshUser.changedPasswordAfter(decodedToken.iat)) {
+        return next(new AppError('User recently changed password! Please log in again', 401, res));
+    }
 
     // Access granted to the protected route
     req.user = freshUser;
@@ -119,7 +132,7 @@ exports.updatePassword = async (req, res, next) => {
 
     // 2) Check if posted password is correct
     if (!(await user.correctPassword(req.body.passwordCurrent, user.password))) {
-        return next(new AppError('Your current password is wrong'));
+        return next(new AppError('Your current password is wrong', 401, res));
     }
 
     // 3) If so, update password
