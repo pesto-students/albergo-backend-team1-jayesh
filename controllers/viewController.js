@@ -1,16 +1,17 @@
-const Hotel = require('./../models/hotelModel');
-const factory = require('./handlerFactory');
+import HotelModel from './../models/hotelModel';
+import { getOne } from './handlerFactory';
 
-exports.getOverview = async (req, res, next) => {
-    const featuredHotels = await Hotel.find({ isFeatured: { $eq: true } }).limit(3);
+export async function getOverview(req, res) {
+    const featuredHotels = await HotelModel.find({ isFeatured: { $eq: true } }).limit(3);
 
-    const topRatedHotels = await Hotel.find({}).sort({ ratingsAverage: -1 }).limit(3);
+    const topRatedHotels = await HotelModel.find({}).sort({ ratingsAverage: -1 }).limit(3);
 
     const hotelView = {
         featuredHotels,
         topRatedHotels
     }
-    res.status(200).send(hotelView);
+
+    res.status(200).json(hotelView);
 }
 
-exports.getHotel = factory.getOne(Hotel);
+export const getHotel = getOne(HotelModel);

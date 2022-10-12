@@ -1,4 +1,4 @@
-const Hotel = require('./../models/hotelModel');
+const Hotel = require('./../models/hotelModel').default;
 const factory = require('./handlerFactory');
 
 exports.createHotel = factory.createOne(Hotel);

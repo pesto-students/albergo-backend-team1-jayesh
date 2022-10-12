@@ -43,7 +43,7 @@ exports.logout = (req, res) => {
     });
 }
 
-exports.signup = async (req, res, next) => {
+exports.signup = async (req, res) => {
 
     const newUser = await User.create({
         name: req.body.name,

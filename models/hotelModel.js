@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const slugify = require('slugify');
+import { Schema, model } from 'mongoose';
+// import slugify from 'slugify';
 
-const hotelSchema = new mongoose.Schema({
+const hotelSchema = new Schema({
     name: {
         type: String,
         required: [true, 'A hotel must have a name'],
@@ -76,7 +76,7 @@ const hotelSchema = new mongoose.Schema({
     },
     hotelEmp: [
         {
-            type: mongoose.Schema.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: 'Users'
         }
     ]
@@ -85,16 +85,28 @@ const hotelSchema = new mongoose.Schema({
         toJSON: { virtuals: true },
         toObject: { virtuals: true },
         timestamps: true
-    });
+    }
+);
+
+function generateUID(hotelName, hotelCity) {
+    // I generate the UID from two parts here 
+    // to ensure the random number provide enough bits.
+    var firstPart = (Math.random() * 46656) | 0;
+    var secondPart = (Math.random() * 46656) | 0;
+    firstPart = (hotelName.replace(" ", "-").slice(0, 3) + firstPart.toString(36)).slice(-3);
+    secondPart = (hotelCity.slice(0, 3) + secondPart.toString(36)).slice(-3);
+    const result = firstPart + secondPart;
+    return result.toString().toLowerCase().trim();
+}
 
 
 // Document middleware
 hotelSchema.pre('save', function (next) {
-    this.slug = slugify(this.id, { lower: true });
+    this.slug = generateUID(this.name, this.hotelCity)
     // this.slug = slugify(this.name.concat(this.id), { lower: true });
     next();
 });
 
-const Hotel = mongoose.model('Hotel', hotelSchema);
+const HotelModel = model('Hotel', hotelSchema);
 
-module.exports = Hotel;
+export default HotelModel;

@@ -21,19 +21,6 @@ const userSchema = new mongoose.Schema({
         minlength: 8,
         select: false
     },
-    passwordConfirm: {
-        type: String,
-        required: [true, 'Please confirm your password'],
-        minlength: 8,
-        validate: {
-            // This only works for create and save operations
-            validator: function (el) {
-                return el === this.password;
-            },
-            message: "Passwords don't match"
-        }
-    },
-    passwordChangedAt: Date,
     role: {
         type: String,
         enum: ['User', 'Employee']

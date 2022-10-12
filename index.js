@@ -1,25 +1,22 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const mongoose = require('mongoose');
-var bodyParser = require('body-parser')
+import express, { json, urlencoded } from 'express';
+import { config } from 'dotenv';
+import cors from "cors";
 
-const viewRouter = require('./routes/viewRoutes');
-const userRouter = require('./routes/userRoutes');
-const hotelRouter = require('./routes/hotelRoutes');
+import viewRouter from './routes/viewRoutes';
+import userRouter from './routes/userRoutes';
+import hotelRouter from './routes/hotelRoutes';
+import { dbConnect } from './utils/db.js';
 
-dotenv.config({ path: './.env' })
+config({ path: './.env' })
 
-var app = express()
+const app = express();
+const port = process.env.PORT || 5000;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(json());
+app.use(urlencoded({ extended: true }));
+app.use(cors());
 
-const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
-
-mongoose.connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true        // Added due a warning in terminal
-}).then(() => console.log('DB connection successful!'));
+dbConnect();
 
 app.use('/', viewRouter);
 
@@ -27,6 +24,6 @@ app.use('/api/users', userRouter);
 
 app.use('/hotel', hotelRouter);
 
-app.listen(process.env.PORT || 8080, () => {
-    console.log('listening on port 8080');
-});
+app.listen(port, () =>
+    console.log(`⚡⚡⚡ - Server listening on - http://localhost:${port}`)
+);

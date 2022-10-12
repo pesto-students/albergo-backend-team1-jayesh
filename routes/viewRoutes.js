@@ -1,11 +1,11 @@
-const express = require('express');
-const viewsController = require('./../controllers/viewController');
+import { Router } from 'express';
+import { getOverview, getHotel } from './../controllers/viewController';
 
-const router = express.Router();
+const router = Router({ caseSensitive: true });
 
-router.get('/', viewsController.getOverview);
+router.get('/', getOverview);
 // router.post('/hotelsByCoordinates', viewsController.getHotelsByCoordinates);
 
-router.get('/hotel/:id', viewsController.getHotel);
+router.get('/hotel/:id', getHotel);
 
-module.exports = router;
+export default router;
