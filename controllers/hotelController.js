@@ -1,17 +1,6 @@
 const Hotel = require('./../models/hotelModel');
 const factory = require('./handlerFactory');
 
-exports.createHotel = factory.createOne(Hotel);
-// exports.sendHotels = async (req, res, next) => {
-//     const doc = await Hotel.create(req.body);
-//     res.status(201).json({
-//         status: 'success',
-//         data: {
-//             data: doc,
-//         },
-//     });
-//     next();
-// };
 
 exports.searchByCity = async (req, res, next) => {
     const doc = await Hotel.find({ hotelCity: req.body.city });
@@ -23,3 +12,11 @@ exports.searchByCity = async (req, res, next) => {
     });
     next();
 };
+
+exports.createHotel = factory.createOne(Hotel);
+
+exports.getHotel = factory.getOne(Hotel);
+
+exports.updateHotel = factory.updateOne(Hotel);
+
+exports.deleteHotel = factory.deleteOne(Hotel);

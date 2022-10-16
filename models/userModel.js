@@ -38,9 +38,15 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ['User', 'Employee']
     },
-    wishlist: [String],
+    wishlist: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Wishlist'
+    },
     bookings: [String],
     reviews: [String],
+    passwordChangedAt: Date,
+    passwordResetToken: String,
+    passwordResetExpires: Date,
     active: {
         type: Boolean,
         default: true,

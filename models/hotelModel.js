@@ -41,14 +41,6 @@ const hotelSchema = new mongoose.Schema({
     coordinates: {
         type: Number
     },
-    // "locations": {
-    //     "type": {
-    //         "type": String,
-    //         "enum": ["Point"],
-    //         "required": true
-    //     },
-    //     "coordinates": [Number]
-    // },
     ratingsAverage: {
         type: Number,
         default: 0,

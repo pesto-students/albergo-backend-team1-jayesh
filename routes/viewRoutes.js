@@ -1,11 +1,17 @@
 const express = require('express');
-const viewsController = require('./../controllers/viewController');
+const hotelController = require('./../controllers/hotelController');
+const viewController = require('./../controllers/viewController');
+const authController = require('./../controllers/authController');
 
 const router = express.Router();
 
-router.get('/', viewsController.getOverview);
+router.get('/', viewController.getOverview);
 // router.post('/hotelsByCoordinates', viewsController.getHotelsByCoordinates);
 
-router.get('/hotel/:id', viewsController.getHotel);
+router.route('/hotel/:id')
+    .get(hotelController.getHotel)
+    .patch(authController.protect, hotelController.updateHotel)
+    .delete(authController.protect, hotelController.deleteHotel);
+
 
 module.exports = router;
