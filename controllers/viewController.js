@@ -1,4 +1,6 @@
 const Hotel = require('./../models/hotelModel');
+const User = require('./../models/userModel');
+const Wishlist = require('./../models/wishlistModel');
 const factory = require('./handlerFactory');
 
 exports.getOverview = async (req, res, next) => {
@@ -11,6 +13,4 @@ exports.getOverview = async (req, res, next) => {
         topRatedHotels
     }
     res.status(200).send(hotelView);
-}
-
-exports.getHotel = factory.getOne(Hotel);
+};

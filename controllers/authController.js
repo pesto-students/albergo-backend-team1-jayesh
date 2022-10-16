@@ -85,6 +85,32 @@ exports.login = async (req, res, next) => {
     createSendToken(user, 200, res);
 }
 
+exports.isLoggedIn = async (req, res, next) => {
+    // Getting the token and check if it exists
+    if (req.cookies.jwt) {
+        try {
+            const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET);
+
+            // Check if user exists 
+            const currentUser = await User.findById(decoded.id);
+            if (!currentUser) {
+                return next();
+            }
+
+            // Check if user changed password after token was issued
+            if (currentUser.changedPasswordAfter(decoded.iat)) {
+                return next();
+            }
+            // User successfully logged in
+            res.locals.user = currentUser;
+            return next();
+        } catch (err) {
+            return next();
+        }
+    }
+    next();
+};
+
 exports.protect = async (req, res, next) => {
     // 1) Get the token and check if its there
     const auth = req.headers.authorization;
