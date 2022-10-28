@@ -1,5 +1,16 @@
 const AppError = require('./../utils/appError');
 
+exports.getAll = (Model) => async (req, res, next) => {
+    const doc = await Model.find();
+    res.status(200).json({
+        status: 'success',
+        results: doc.length,
+        data: {
+            data: doc
+        }
+    });
+};
+
 // Create
 exports.createOne = (Model) => async (req, res, next) => {
     const doc = await Model.create(req.body);

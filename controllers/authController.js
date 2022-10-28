@@ -169,3 +169,12 @@ exports.updatePassword = async (req, res, next) => {
     // 4) Log the user in & send JWT
     createSendToken(user, 200, res);
 }
+
+exports.restrictTo = (...roles) => {
+    return (req, res, next) => {
+        if (!roles.includes(req.user.role)) {
+            return next(new AppError('You do not have permission to access this page', 403, res));
+        }
+        next();
+    };
+};

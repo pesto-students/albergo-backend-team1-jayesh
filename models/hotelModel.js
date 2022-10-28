@@ -71,7 +71,13 @@ const hotelSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Users'
         }
-    ]
+    ],
+    rooms: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Rooms'
+        }
+    ],
 },
     {
         toJSON: { virtuals: true },
