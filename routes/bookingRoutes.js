@@ -7,12 +7,12 @@ const router = express.Router();
 router.use(authController.protect);
 
 router
-    .route("/")
+    .route('/')
     .get(bookingController.getAllBookings)
     .post(bookingController.createBooking);
 
 router
-    .route("/:id")
+    .route('/:id')
     .get(bookingController.getBooking)
     .patch(bookingController.updateBooking)
     .patch(bookingController.deleteBooking);

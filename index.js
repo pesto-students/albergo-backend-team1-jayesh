@@ -7,6 +7,7 @@ const viewRouter = require('./routes/viewRoutes');
 const userRouter = require('./routes/userRoutes');
 const hotelRouter = require('./routes/hotelRoutes');
 const wishlistRouter = require('./routes/wishlistRoutes');
+const bookingRouter = require('./routes/bookingRoutes');
 
 dotenv.config({ path: './.env' })
 
@@ -30,6 +31,8 @@ app.use('/api/users', userRouter);
 app.use('/hotel', hotelRouter);
 
 app.use('/wishlist', wishlistRouter);
+
+app.use('/booking', bookingRouter);
 
 app.listen(process.env.PORT || 8080, () => {
     console.log('listening on port 8080');
