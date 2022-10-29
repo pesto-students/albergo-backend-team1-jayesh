@@ -11,7 +11,7 @@ const roomSchema = new mongoose.Schema({
     capacity: Number,
     facilities: [String],
     amenities: [String],
-    img: [String],
+    images: [String],
     available: Boolean,
     quantityAvailable: Number
 });

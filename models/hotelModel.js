@@ -18,6 +18,11 @@ const hotelSchema = new mongoose.Schema({
         sparse: true,
         required: [true, 'A hotel must have an email address']
     },
+    hotelPassword: {
+        type: String,
+        minlength: 8,
+        required: [true, 'A hotel must have a password']
+    },
     hotelAddress: {
         type: String,
         required: [true, 'A hotel must have an address']
@@ -39,7 +44,7 @@ const hotelSchema = new mongoose.Schema({
         default: false
     },
     coordinates: {
-        type: Number
+        type: [Number]
     },
     ratingsAverage: {
         type: Number,
