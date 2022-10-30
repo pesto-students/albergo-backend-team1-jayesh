@@ -17,13 +17,11 @@ const reviewSchema = new mongoose.Schema({
     },
     hotel: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Hotel',
-        required: [true, 'Review must belong to a hotel.']
+        ref: 'Hotel'
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: [true, 'Review must belong to a user.']
+        ref: 'User'
     }
 },
     {
@@ -31,12 +29,13 @@ const reviewSchema = new mongoose.Schema({
         toObject: { virtuals: true }
     });
 
-reviewSchema.index({ hotel: 1, user: 1 }, { unique: true });
-
 reviewSchema.pre(/^find/, function (next) {
     this.populate({
         path: 'user',
         select: 'name photo'
+    }).populate({
+        path: 'hotel',
+        select: 'name'
     });
 
     next();
