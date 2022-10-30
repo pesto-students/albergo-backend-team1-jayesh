@@ -3,13 +3,25 @@ const factory = require('./handlerFactory');
 const Booking = require('./../models/bookingModel');
 
 
-exports.searchByCity = async (req, res, next) => {
-    const doc = await Hotel.find({ hotelCity: req.body.city });
+exports.searchByAny = async (req, res, next) => {
+    let { searchBy, value } = req.params;
+    value = value.split('-').join(' ');
+    let doc;
+    if (searchBy === 'name')
+        doc = await Hotel.find({ name: value });
+    else if (searchBy === 'city')
+        doc = await Hotel.find({ hotelCity: value });
+    else if (searchBy === 'state')
+        doc = await Hotel.find({ hotelState: value });
+    else if (searchBy === 'country')
+        doc = await Hotel.find({ hotelCountry: value });
+
     res.status(200).json({
         status: 'success',
+        length: doc.length,
         data: {
             data: doc,
-        },
+        }
     });
     next();
 };

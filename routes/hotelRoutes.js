@@ -14,6 +14,6 @@ router.route('/:id')
     .patch(authController.protect, authController.restrictTo('Employee'), hotelController.updateHotel)
     .delete(authController.protect, authController.restrictTo('Employee'), hotelController.deleteHotel);
 
-router.post('/searchByCity', hotelController.searchByCity);
+router.post('/searchBy/:searchBy/:value', hotelController.searchByAny);
 
 module.exports = router;

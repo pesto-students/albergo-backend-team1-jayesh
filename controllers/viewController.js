@@ -4,13 +4,17 @@ const Wishlist = require('./../models/wishlistModel');
 const factory = require('./handlerFactory');
 
 exports.getOverview = async (req, res, next) => {
-    const featuredHotels = await Hotel.find({ isFeatured: { $eq: true } }).limit(3);
+    const limit = (req.body.limit) ? req.body.limit : 10;
+    const featuredHotels = await Hotel.find({ isFeatured: { $eq: true } }).limit(limit);
 
-    const topRatedHotels = await Hotel.find({}).sort({ ratingsAverage: -1 }).limit(3);
+    const topRatedHotels = await Hotel.find({}).sort({ ratingsAverage: -1 }).limit(limit);
+
+    const latestHotels = await Hotel.find({}).sort({ createdAt: -1 }).limit(limit);
 
     const hotelView = {
         featuredHotels,
-        topRatedHotels
+        topRatedHotels,
+        latestHotels
     }
     res.status(200).send(hotelView);
 };
