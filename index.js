@@ -1,7 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+const cors = require('cors');
 
 const viewRouter = require('./routes/viewRoutes');
 const userRouter = require('./routes/userRoutes');
@@ -16,6 +17,7 @@ var app = express()
 // app.use(bodyParser.json());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 
