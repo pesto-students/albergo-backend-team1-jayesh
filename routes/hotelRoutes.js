@@ -5,7 +5,7 @@ const reviewRouter = require('./reviewRoutes');
 
 const router = express.Router();
 
-router.route('/:id/reviews', reviewRouter);
+router.use('/:id/reviews', reviewRouter);
 
 router.post('/onboard', hotelController.createHotel);
 
