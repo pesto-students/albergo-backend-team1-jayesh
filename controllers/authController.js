@@ -7,13 +7,14 @@ const AppError = require('./../utils/appError');
 dotenv.config({ path: './.env' })
 
 const User = require('./../models/userModel');
+const { log } = require('console');
 
-const signToken = id => {
-    return jwt.sign({ id: id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
+const signToken = (id, email, name, role) => {
+    return jwt.sign({ id, email, name, role }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
 };
 
 const createSendToken = (user, statusCode, res) => {
-    const token = signToken(user._id);
+    const token = signToken(user._id, user.email, user.name, user.role);
 
     const cookieOptions = {
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
@@ -27,10 +28,7 @@ const createSendToken = (user, statusCode, res) => {
 
     res.status(statusCode).json({
         status: 'success',
-        token,
-        data: {
-            user
-        }
+        token
     });
 };
 
@@ -88,26 +86,40 @@ exports.login = async (req, res, next) => {
 
 exports.isLoggedIn = async (req, res, next) => {
     // Getting the token and check if it exists
-    if (req.cookies.jwt) {
-        try {
-            const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET);
+    const auth = req.headers.authorization;
 
-            // Check if user exists 
-            const currentUser = await User.findById(decoded.id);
-            if (!currentUser) {
-                return next();
-            }
+    let token;
 
-            // Check if user changed password after token was issued
-            if (currentUser.changedPasswordAfter(decoded.iat)) {
-                return next();
-            }
-            // User successfully logged in
-            res.locals.user = currentUser;
-            return next();
-        } catch (err) {
+    if (auth && auth.startsWith('Bearer')) {
+        token = auth.split(' ')[1];
+    } else if (req.cookies.jwt) {
+        token = req.cookies.jwt;
+    }
+
+    console.log(token);
+    if (token) {
+        const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+        // Check if user exists 
+        const currentUser = await User.findById(decoded.id);
+        if (!currentUser) {
             return next();
         }
+
+        // Check if user changed password after token was issued
+        if (currentUser.changedPasswordAfter(decoded.iat)) {
+            return next();
+        }
+        // User is logged in
+        res.locals.user = currentUser;
+
+        res.status(200).json({
+            status: 'success',
+            data: {
+                user: currentUser,
+                token: token
+            }
+        });
+
     }
     next();
 };
