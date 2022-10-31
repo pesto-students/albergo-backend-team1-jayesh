@@ -18,6 +18,11 @@ const hotelSchema = new Schema({
         sparse: true,
         required: [true, 'A hotel must have an email address']
     },
+    hotelPassword: {
+        type: String,
+        minlength: 8,
+        required: [true, 'A hotel must have a password']
+    },
     hotelAddress: {
         type: String,
         required: [true, 'A hotel must have an address']
@@ -39,16 +44,8 @@ const hotelSchema = new Schema({
         default: false
     },
     coordinates: {
-        type: Number
+        type: [Number]
     },
-    // "locations": {
-    //     "type": {
-    //         "type": String,
-    //         "enum": ["Point"],
-    //         "required": true
-    //     },
-    //     "coordinates": [Number]
-    // },
     ratingsAverage: {
         type: Number,
         default: 0,
@@ -79,7 +76,13 @@ const hotelSchema = new Schema({
             type: Schema.Types.ObjectId,
             ref: 'Users'
         }
-    ]
+    ],
+    rooms: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Rooms'
+        }
+    ],
 },
     {
         toJSON: { virtuals: true },
