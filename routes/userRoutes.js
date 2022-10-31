@@ -1,30 +1,35 @@
-import { Router } from 'express';
+import { Router } from "express";
 
-import { signup, checkEmail, login, logout, protect, updatePassword } from '../controllers/authController';
-import { getMe, getUser } from '../controllers/userController';
+import {
+  signup,
+  checkEmail,
+  login,
+  logout,
+  protect,
+  updatePassword,
+  forgetPassword,
+  resetPassword,
+  isLoggedIn,
+} from "../controllers/authController";
+import { getMe, getUser } from "../controllers/userController";
 
 const router = Router({
-    caseSensitive: true
+  caseSensitive: true,
 });
 
-router.post('/signup', signup);
-router.post('/checkEmail', checkEmail);
-router.post('/login', login);
-router.get('/logout', logout);
+router.post("/signup", signup);
+router.post("/checkEmail", checkEmail);
+router.post("/login", login);
+router.get("/logout", logout);
+
+router.post("/forgetPassword", forgetPassword);
+router.patch("/resetPassword/:token", resetPassword);
 
 router.use(protect);
 
-router.patch('/updateMyPassword', updatePassword);
-router.get('/me', getMe, getUser);
+router.get("/loggedIn", isLoggedIn);
 
-router.post('/forgetPassword', authController.forgetPassword);
-router.patch('/resetPassword/:token', authController.resetPassword);
-
-router.use(authController.protect);
-
-router.get('/loggedIn', authController.isLoggedIn);
-
-router.patch('/updateMyPassword', authController.updatePassword);
-router.get('/me', userController.getMe, userController.getUser);
+router.patch("/updateMyPassword", updatePassword);
+router.get("/me", getMe, getUser);
 
 export default router;

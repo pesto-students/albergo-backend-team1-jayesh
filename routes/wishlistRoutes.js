@@ -1,14 +1,18 @@
-const express = require('express');
-const hotelController = require('./../controllers/hotelController');
-const wishlistController = require('./../controllers/wishlistController');
-const authController = require('./../controllers/authController');
+import { Router } from "express";
+import {
+  getAllWishlist,
+  createWishlist,
+  deleteWishlist,
+} from "./../controllers/wishlistController";
+import { protect } from "./../controllers/authController";
+import hotelController from "./../controllers/hotelController";
 
-const router = express.Router();
+const router = Router();
 
-router.get('/allWishlist', authController.protect, wishlistController.getAllWishlist);
+router.get("/allWishlist", protect, getAllWishlist);
 
-router.post('/createOne', authController.protect, wishlistController.createWishlist);
+router.post("/createOne", protect, createWishlist);
 
-router.delete('/deleteOne/:id', authController.protect, wishlistController.deleteWishlist);
+router.delete("/deleteOne/:id", protect, deleteWishlist);
 
-module.exports = router;
+export default router;
