@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const bcrypt = require('bcryptjs');
+const helperFunctions = require('./../utils/helperFunctions');
 
 const hotelSchema = new mongoose.Schema({
     name: {
@@ -7,35 +9,48 @@ const hotelSchema = new mongoose.Schema({
         required: [true, 'A hotel must have a name'],
     },
     slug: String,
-    hotelPhone: {
+    phone: {
         type: Number,
         required: [true, 'A hotel must have a phone number'],
         unique: true
     },
-    hotelEmail: {
+    email: {
         type: String,
         unique: true,
         sparse: true,
         required: [true, 'A hotel must have an email address']
     },
-    hotelPassword: {
+    password: {
         type: String,
         minlength: 8,
         required: [true, 'A hotel must have a password']
     },
-    hotelAddress: {
+    passwordConfirm: {
+        type: String,
+        required: [true, 'Please confirm your password'],
+        minlength: 8,
+        validate: {
+            // This only works for create and save operations
+            validator: function (el) {
+                return el === this.password;
+            },
+            message: "Passwords don't match"
+        }
+    },
+    passwordChangedAt: Date,
+    address: {
         type: String,
         required: [true, 'A hotel must have an address']
     },
-    hotelCity: {
+    city: {
         type: String,
         required: [true, 'A hotel must have a city location']
     },
-    hotelState: {
+    state: {
         type: String,
         required: [true, 'A hotel must have a state location']
     },
-    hotelCountry: {
+    country: {
         type: String,
         required: [true, 'A hotel must have a country location']
     },
@@ -43,8 +58,10 @@ const hotelSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    facilities: [String],
     coordinates: {
-        type: [Number]
+        long: Number,
+        lat: Number
     },
     ratingsAverage: {
         type: Number,
@@ -57,26 +74,20 @@ const hotelSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    hotelDescription: {
+    description: {
         type: String,
         trim: true,
     },
-    // imageCover: {
-    //     type: String,
-    //     required: [true, 'A hotel must have a cover image']
-    // },
+    role: {
+        type: String,
+        enum: ['User', 'Employee', 'Hotel']
+    },
     images: [String],
     createdAt: {
         type: Date,
         default: Date.now(),
         select: false
     },
-    hotelEmp: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Users'
-        }
-    ],
     rooms: [
         {
             type: mongoose.Schema.Types.ObjectId,
@@ -93,10 +104,41 @@ const hotelSchema = new mongoose.Schema({
 
 // Document middleware
 hotelSchema.pre('save', function (next) {
-    this.slug = slugify(this.id, { lower: true });
-    // this.slug = slugify(this.name.concat(this.id), { lower: true });
+    this.slug = generateUID(this.name, this.city);
     next();
 });
+
+hotelSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) return next();
+
+    this.password = await bcrypt.hash(this.password, 12);
+    this.passwordConfirm = undefined;
+    next();
+});
+
+hotelSchema.pre('save', function (next) {
+    if (!this.isModified('password') || this.isNew) return next();
+
+    this.passwordChangedAt = Date.now() - 1000;
+    next();
+});
+
+hotelSchema.methods.correctPassword = helperFunctions.correctPassword;
+
+hotelSchema.methods.changedPasswordAfter = helperFunctions.changedPasswordAfter;
+
+hotelSchema.methods.createPasswordResetToken = helperFunctions.createPasswordResetToken;
+
+function generateUID(hotelName, hotelCity) {
+    var firstPart = (Math.random() * 46656) | 0;
+    var secondPart = (Math.random() * 46656) | 0;
+    firstPart = (
+        hotelName.replace(" ", "-").slice(0, 3) + firstPart.toString(36)
+    ).slice(-3);
+    secondPart = (hotelCity.slice(0, 3) + secondPart.toString(36)).slice(-3);
+    const result = firstPart + secondPart;
+    return result.toString().toLowerCase().trim();
+}
 
 const Hotel = mongoose.model('Hotel', hotelSchema);
 

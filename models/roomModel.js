@@ -9,7 +9,6 @@ const roomSchema = new mongoose.Schema({
     type: String,
     price: Number,
     capacity: Number,
-    facilities: [String],
     amenities: [String],
     images: [String],
     available: Boolean,

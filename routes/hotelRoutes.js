@@ -5,9 +5,12 @@ const reviewRouter = require('./reviewRoutes');
 
 const router = express.Router();
 
+router.route('/').get(hotelController.getAllHotels);
+
 router.use('/:id/reviews', reviewRouter);
 
-router.post('/onboard', hotelController.createHotel);
+// router.post('/onboard', hotelController.createHotel);
+router.post('/onboard', authController.signup)
 
 router.route('/:id')
     .get(hotelController.getHotel)

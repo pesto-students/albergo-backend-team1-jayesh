@@ -1,10 +1,19 @@
 const AppError = require('./../utils/appError');
+const APIFeatures = require('./../utils/apiFeatures');
 
 exports.getAll = (Model) => async (req, res, next) => {
-    const doc = await Model.find();
+
+    let filter = {};
+    if (req.params.hotelId) filter = { hotel: req.params.hotelId };
+
+    const features = new APIFeatures(Model.find(filter), req.query)
+        .sort()
+        .paginate()
+    const doc = await features.query;
+
     res.status(200).json({
         status: 'success',
-        results: doc.length,
+        result: doc.length,
         data: {
             data: doc
         }
@@ -24,7 +33,12 @@ exports.createOne = (Model) => async (req, res, next) => {
 
 // Read
 exports.getOne = (Model) => async (req, res, next) => {
-    const doc = await Model.findById(req.params.id);
+
+    let doc;
+    if (Model === 'Hotel')
+        doc = await Model.find({ slug: req.params.slug });
+
+    doc = await Model.findById(req.params.id);
     if (!doc) {
         return next(new AppError('No document found with that ID', 404, res));
     }
@@ -38,7 +52,15 @@ exports.getOne = (Model) => async (req, res, next) => {
 
 // Update
 exports.updateOne = (Model) => async (req, res, next) => {
-    const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
+
+    let doc;
+    if (Model === 'Hotel')
+        doc = await Model.findOneAndUpdate({ slug: req.params.slug }, req.body, {
+            new: true,
+            runValidators: true,
+        });
+
+    doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
         runValidators: true,
     });
@@ -49,13 +71,18 @@ exports.updateOne = (Model) => async (req, res, next) => {
         status: 'success',
         data: {
             data: doc,
-        },
+        }
     });
 };
 
 // Delete
 exports.deleteOne = (Model) => async (req, res, next) => {
-    const doc = await Model.findByIdAndDelete(req.params.id);
+
+    let doc;
+    if (Model === 'Hotel')
+        doc = await Model.findOneAndDelete({ slug: req.params.slug });
+
+    doc = await Model.findByIdAndDelete(req.params.id);
     if (!doc) {
         return next(new AppError('No document found with that ID', 404, res));
     }

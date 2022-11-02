@@ -7,14 +7,33 @@ const AppError = require('./../utils/appError');
 dotenv.config({ path: './.env' })
 
 const User = require('./../models/userModel');
-const { log } = require('console');
+const Hotel = require('./../models/hotelModel');
 
-const signToken = (id, email, name, role) => {
-    return jwt.sign({ id, email, name, role }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
+const signToken = (signObj) => {
+    return jwt.sign(signObj, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
 };
 
 const createSendToken = (user, statusCode, res) => {
-    const token = signToken(user._id, user.email, user.name, user.role);
+
+    let signObj;
+    if (user.role === "User") {
+        signObj = {
+            id: user._id,
+            email: user.email,
+            name: user.name,
+            role: user.role
+        }
+
+    } else {
+        signObj = {
+            slug: user.slug,
+            email: user.email,
+            name: user.name,
+            role: user.role
+        }
+    }
+
+    const token = signToken(signObj);
 
     const cookieOptions = {
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
@@ -43,16 +62,20 @@ exports.logout = (req, res) => {
 }
 
 exports.signup = async (req, res, next) => {
-
-    const newUser = await User.create({
-        name: req.body.name,
-        email: req.body.email,
-        password: req.body.password,
-        passwordConfirm: req.body.passwordConfirm,
-        role: req.body.role
-    });
-
-    createSendToken(newUser, 201, res);
+    if (req.body.role === 'User') {
+        const newUser = await User.create({
+            name: req.body.name,
+            email: req.body.email,
+            password: req.body.password,
+            passwordConfirm: req.body.passwordConfirm,
+            role: req.body.role
+        });
+        createSendToken(newUser, 201, res);
+    } else {
+        const newHotel = await Hotel.create(req.body);
+        console.log(newHotel.slug);
+        createSendToken(newHotel, 201, res);
+    }
 }
 
 exports.checkEmail = async (req, res, next) => {
@@ -75,9 +98,9 @@ exports.login = async (req, res, next) => {
         return next(new AppError('Please provide an email address and password', 400, res));
     }
 
-    const user = await User.findOne({ email }).select('+password');
+    const user = await User.findOne({ email }).select('+password') || await Hotel.findOne({ email }).select('+password');
 
-    if (!user || !(await user.correctPassword(password, user.password))) {
+    if (!user || !(await user.correctPassword(password, user.password)) || !(await user.correctPassword(password, user.password))) {
         return next(new AppError('Incorrect email or password provided', 401, res));
     }
 
@@ -96,7 +119,6 @@ exports.isLoggedIn = async (req, res, next) => {
         token = req.cookies.jwt;
     }
 
-    console.log(token);
     if (token) {
         const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
         // Check if user exists 
@@ -185,6 +207,7 @@ exports.updatePassword = async (req, res, next) => {
 
 exports.restrictTo = (...roles) => {
     return (req, res, next) => {
+        console.log(req.user.role);
         if (!roles.includes(req.user.role)) {
             return next(new AppError('You do not have permission to access this page', 403, res));
         }

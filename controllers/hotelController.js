@@ -56,9 +56,11 @@ exports.advSearch = async (req, res, next) => {
     });
 };
 
-exports.createHotel = factory.createOne(Hotel);
+// exports.createHotel = factory.createOne(Hotel);
 
 exports.getHotel = factory.getOne(Hotel);
+
+exports.getAllHotels = factory.getAll(Hotel);
 
 exports.updateHotel = factory.updateOne(Hotel);
 
