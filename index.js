@@ -7,6 +7,7 @@ const cors = require('cors');
 const viewRouter = require('./routes/viewRoutes');
 const userRouter = require('./routes/userRoutes');
 const hotelRouter = require('./routes/hotelRoutes');
+const roomRouter = require('./routes/roomRoutes');
 const wishlistRouter = require('./routes/wishlistRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 
@@ -31,6 +32,8 @@ app.use('/', viewRouter);
 app.use('/api/users', userRouter);
 
 app.use('/hotel', hotelRouter);
+
+app.use('/rooms', roomRouter);
 
 app.use('/wishlist', wishlistRouter);
 

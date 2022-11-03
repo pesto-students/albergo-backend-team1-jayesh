@@ -39,7 +39,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a670578",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
@@ -61,7 +61,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
@@ -84,7 +84,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
@@ -107,7 +107,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33"
@@ -173,7 +173,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba"
@@ -195,7 +195,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
@@ -218,7 +218,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc"
@@ -241,7 +241,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
@@ -306,7 +306,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
@@ -328,7 +328,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
@@ -351,7 +351,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0"
@@ -374,7 +374,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b"
@@ -437,7 +437,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
@@ -459,7 +459,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c"
@@ -482,7 +482,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6"
@@ -505,7 +505,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     ""
                 ]
@@ -570,7 +570,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3"
@@ -592,7 +592,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
@@ -615,7 +615,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
@@ -638,7 +638,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"
@@ -702,7 +702,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_49.jpg?alt=media&token=6fbad339-c81a-4534-9045-39dcc8448119",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_52.jpg?alt=media&token=7d5ca74c-b181-41d0-a9e8-3d1231755c7e"
@@ -724,7 +724,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_56.jpg?alt=media&token=fc60f17c-e599-4c6b-b80c-b2174f664de4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4"
@@ -747,7 +747,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_58.jpg?alt=media&token=36e07fe8-17d1-456f-9134-d9031efb0b65"
@@ -770,7 +770,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_5.jpg?alt=media&token=268f7c5b-13bc-4546-b40a-2d24bfa87750",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_59.jpg?alt=media&token=102ad2fd-2ca1-4823-aaf1-62112de574d5"
@@ -837,7 +837,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_54.jpg?alt=media&token=939c4882-a9e2-4b2e-b73e-8ee642da7841",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_35.jpg?alt=media&token=f124b145-b763-482b-beeb-b25d379ba784"
@@ -859,7 +859,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_31.jpg?alt=media&token=7c706125-87f8-4dd1-93f0-5b34dedde2b7",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_23.jpg?alt=media&token=d26e3645-bab2-4dba-a27e-0349c4ec5231"
@@ -882,7 +882,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_6.jpg?alt=media&token=4b4cec9e-3cdb-4fab-89ec-2deb8802dc1a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_44.jpg?alt=media&token=5d292749-2786-4c02-a24b-6b86a89f7a0e"
@@ -905,7 +905,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     ""
                 ]
@@ -970,7 +970,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_10.jpg?alt=media&token=94582f5a-18bc-4535-9ea1-2774e34e1d7a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_8.jpg?alt=media&token=b41f4f3d-9127-4bae-9752-64aaea9f1ac9"
@@ -992,7 +992,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_43.jpg?alt=media&token=71f4df50-03be-496e-a288-a05de99cb4a0",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_53.jpg?alt=media&token=bd718675-fe98-4be8-84a9-ddeaf7c04571"
@@ -1015,7 +1015,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_48.jpg?alt=media&token=fa351d79-15b6-44bb-a73d-bd1f3e39ebcc",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_13.jpg?alt=media&token=2d4c006f-a729-4ea4-9b7e-9e15bebcea5f"
@@ -1038,7 +1038,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_18.jpg?alt=media&token=d788a587-48bb-4c2e-a6e8-dea275983710",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_45.jpg?alt=media&token=7789c66a-409e-4372-93d0-f9fd8fb98a54"
@@ -1102,7 +1102,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_9.jpg?alt=media&token=c4e66697-2b72-4f73-a89a-423275a58f5a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_7.jpg?alt=media&token=f517a508-00eb-4842-90cb-d21406467480"
@@ -1124,7 +1124,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a670578",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff"
@@ -1147,7 +1147,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
@@ -1170,7 +1170,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138"
@@ -1232,7 +1232,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
@@ -1254,7 +1254,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e"
@@ -1277,7 +1277,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb"
@@ -1300,7 +1300,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
@@ -1363,7 +1363,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850"
@@ -1385,7 +1385,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4"
@@ -1408,7 +1408,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
@@ -1431,7 +1431,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
@@ -1494,7 +1494,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
@@ -1516,7 +1516,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
@@ -1539,7 +1539,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
@@ -1562,7 +1562,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
@@ -1625,7 +1625,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"
@@ -1647,7 +1647,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a"
@@ -1670,7 +1670,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_52.jpg?alt=media&token=7d5ca74c-b181-41d0-a9e8-3d1231755c7e",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_56.jpg?alt=media&token=fc60f17c-e599-4c6b-b80c-b2174f664de4"
@@ -1693,7 +1693,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_49.jpg?alt=media&token=6fbad339-c81a-4534-9045-39dcc8448119",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4"
@@ -1760,7 +1760,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e"
@@ -1782,7 +1782,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_58.jpg?alt=media&token=36e07fe8-17d1-456f-9134-d9031efb0b65",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_54.jpg?alt=media&token=939c4882-a9e2-4b2e-b73e-8ee642da7841"
@@ -1805,7 +1805,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_31.jpg?alt=media&token=7c706125-87f8-4dd1-93f0-5b34dedde2b7",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_23.jpg?alt=media&token=d26e3645-bab2-4dba-a27e-0349c4ec5231"
@@ -1828,7 +1828,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_5.jpg?alt=media&token=268f7c5b-13bc-4546-b40a-2d24bfa87750",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_53.jpg?alt=media&token=bd718675-fe98-4be8-84a9-ddeaf7c04571"
@@ -1892,7 +1892,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_10.jpg?alt=media&token=94582f5a-18bc-4535-9ea1-2774e34e1d7a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_43.jpg?alt=media&token=71f4df50-03be-496e-a288-a05de99cb4a0"
@@ -1914,7 +1914,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_7.jpg?alt=media&token=f517a508-00eb-4842-90cb-d21406467480",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_44.jpg?alt=media&token=5d292749-2786-4c02-a24b-6b86a89f7a0e"
@@ -1937,7 +1937,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_45.jpg?alt=media&token=7789c66a-409e-4372-93d0-f9fd8fb98a54",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_9.jpg?alt=media&token=c4e66697-2b72-4f73-a89a-423275a58f5a"
@@ -1960,7 +1960,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_13.jpg?alt=media&token=2d4c006f-a729-4ea4-9b7e-9e15bebcea5f",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_6.jpg?alt=media&token=4b4cec9e-3cdb-4fab-89ec-2deb8802dc1a"
@@ -2025,7 +2025,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_48.jpg?alt=media&token=fa351d79-15b6-44bb-a73d-bd1f3e39ebcc",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_8.jpg?alt=media&token=b41f4f3d-9127-4bae-9752-64aaea9f1ac9"
@@ -2047,7 +2047,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_35.jpg?alt=media&token=f124b145-b763-482b-beeb-b25d379ba784",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_59.jpg?alt=media&token=102ad2fd-2ca1-4823-aaf1-62112de574d5"
@@ -2070,7 +2070,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a6705",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
@@ -2093,7 +2093,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
@@ -2160,7 +2160,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
                     "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
@@ -2182,7 +2182,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
                     "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33"
@@ -2205,7 +2205,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138",
                     "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba"
@@ -2228,7 +2228,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb",
                     "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
@@ -2293,7 +2293,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc"
@@ -2315,7 +2315,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
@@ -2338,7 +2338,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
@@ -2361,7 +2361,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0"
@@ -2426,7 +2426,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b"
@@ -2448,7 +2448,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
@@ -2471,7 +2471,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c"
@@ -2494,7 +2494,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6"
@@ -2558,7 +2558,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3"
@@ -2580,7 +2580,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
@@ -2603,7 +2603,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
@@ -2626,7 +2626,7 @@
                     "Laundry Service"
                 ],
                 "available": true,
-                "quanity": 10,
+                "quantity": 10,
                 "images": [
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a",
                     "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"

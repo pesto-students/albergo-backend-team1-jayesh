@@ -11,7 +11,6 @@ exports.createWishlist = async (req, res, next) => {
         if (!hotel) {
             return new AppError('No hotel found with that ID', 404, res);
         }
-        console.log(hotel);
         const user = await User.findById(req.user.id);
         if (!user) {
             return new AppError('No user found with that ID', 404, res);

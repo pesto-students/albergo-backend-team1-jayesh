@@ -22,6 +22,7 @@ exports.getAll = (Model) => async (req, res, next) => {
 
 // Create
 exports.createOne = (Model) => async (req, res, next) => {
+
   const doc = await Model.create(req.body);
   res.status(201).json({
     status: "success",
@@ -35,7 +36,7 @@ exports.createOne = (Model) => async (req, res, next) => {
 exports.getOne = (Model) => async (req, res, next) => {
   let doc;
 
-  if (Model === Hotel) doc = await Model.find({ slug: req.params.id });
+  if (Model === Hotel) doc = await Model.find({ slug: req.params.slug });
   else doc = await Model.findById(req.params.id);
 
   if (!doc) {
@@ -43,14 +44,15 @@ exports.getOne = (Model) => async (req, res, next) => {
   }
   res.status(200).json({
     status: "success",
-    data: doc[0],
+    data: doc
   });
 };
 
 // Update
 exports.updateOne = (Model) => async (req, res, next) => {
   let doc;
-
+  console.log(req.body);
+  console.log(req.params.slug);
   if (Model === Hotel)
     doc = await Model.findOneAndUpdate({ slug: req.params.slug }, req.body, {
       new: true,
@@ -67,9 +69,7 @@ exports.updateOne = (Model) => async (req, res, next) => {
   }
   res.status(200).json({
     status: "success",
-    data: {
-      data: doc,
-    },
+    data: doc
   });
 };
 

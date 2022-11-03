@@ -170,7 +170,8 @@ exports.protect = async (req, res, next) => {
     }
 
     // 3) Check if user still exists
-    const freshUser = await User.findById(decodedToken.id);
+
+    const freshUser = await User.findById(decodedToken.id) || await Hotel.findOne({ slug: decodedToken.slug });
     if (!freshUser) {
         return next(new AppError('The user belonging to this token no longer exists.', 400, res));
     }
@@ -206,7 +207,6 @@ exports.updatePassword = async (req, res, next) => {
 
 exports.restrictTo = (...roles) => {
     return (req, res, next) => {
-        console.log(req.user.role);
         if (!roles.includes(req.user.role)) {
             return next(new AppError('You do not have permission to access this page', 403, res));
         }

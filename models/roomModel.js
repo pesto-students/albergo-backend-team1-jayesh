@@ -6,7 +6,7 @@ const roomSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Hotel'
     },
-    type: String,
+    name: String,
     price: Number,
     capacity: Number,
     amenities: [String],
@@ -23,5 +23,5 @@ roomSchema.pre(/^find/, function (next) {
     next();
 });
 
-const Rooms = mongoose.model('Rooms', roomSchema);
-model.exports = Rooms;
+const Room = mongoose.model('Room', roomSchema);
+module.exports = Room;
