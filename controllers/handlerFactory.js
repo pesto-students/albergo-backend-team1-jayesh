@@ -37,8 +37,8 @@ exports.getOne = (Model) => async (req, res, next) => {
     let doc;
     if (Model === 'Hotel')
         doc = await Model.find({ slug: req.params.slug });
-
-    doc = await Model.findById(req.params.id);
+    else
+        doc = await Model.findById(req.params.id);
     if (!doc) {
         return next(new AppError('No document found with that ID', 404, res));
     }
@@ -59,11 +59,11 @@ exports.updateOne = (Model) => async (req, res, next) => {
             new: true,
             runValidators: true,
         });
-
-    doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true,
-    });
+    else
+        doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+            runValidators: true,
+        });
     if (!doc) {
         return next(new AppError('No document found with that ID', 404, res));
     }
@@ -81,8 +81,8 @@ exports.deleteOne = (Model) => async (req, res, next) => {
     let doc;
     if (Model === 'Hotel')
         doc = await Model.findOneAndDelete({ slug: req.params.slug });
-
-    doc = await Model.findByIdAndDelete(req.params.id);
+    else
+        doc = await Model.findByIdAndDelete(req.params.id);
     if (!doc) {
         return next(new AppError('No document found with that ID', 404, res));
     }

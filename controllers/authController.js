@@ -73,7 +73,6 @@ exports.signup = async (req, res, next) => {
         createSendToken(newUser, 201, res);
     } else {
         const newHotel = await Hotel.create(req.body);
-        console.log(newHotel.slug);
         createSendToken(newHotel, 201, res);
     }
 }
