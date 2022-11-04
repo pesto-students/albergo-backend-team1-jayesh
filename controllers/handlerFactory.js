@@ -44,7 +44,7 @@ exports.getOne = (Model) => async (req, res, next) => {
   }
   res.status(200).json({
     status: "success",
-    data: doc
+    data: doc[0],
   });
 };
 
