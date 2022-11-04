@@ -105,6 +105,10 @@ const hotelSchema = new mongoose.Schema({
 // Document middleware
 hotelSchema.pre('save', function (next) {
     this.slug = generateUID(this.name, this.city);
+    this.name = this.name.toLowerCase();
+    this.city = this.city.toLowerCase();
+    this.state = this.state.toLowerCase();
+    this.country = this.country.toLowerCase();
     next();
 });
 
