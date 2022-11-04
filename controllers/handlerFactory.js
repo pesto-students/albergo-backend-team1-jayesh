@@ -39,9 +39,10 @@ exports.getOne = (Model) => async (req, res, next) => {
   if (Model === Hotel) doc = await Model.find({ slug: req.params.slug });
   else doc = await Model.findById(req.params.id);
 
-  if (!doc) {
+  if (!doc && doc.length > 0) {
     return next(new AppError("No document found with that ID", 404, res));
   }
+
   res.status(200).json({
     status: "success",
     data: doc[0],

@@ -20,6 +20,6 @@ router.route('/:slug')
     .patch(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.updateHotel)
     .delete(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.deleteHotel);
 
-router.post('/searchBy/:searchBy/:value', hotelController.searchByAny);
+router.post("/search", hotelController.searchByAny);
 
 module.exports = router;
