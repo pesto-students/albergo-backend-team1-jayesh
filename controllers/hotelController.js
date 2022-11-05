@@ -10,7 +10,7 @@ exports.searchByAny = async (req, res, next) => {
     if (Object.hasOwnProperty.call(searchBy, searchParam)) {
       const element = searchBy[searchParam];
       searchBy[searchParam] = {
-        $regex: element,
+        $regex: element.toLowerCase(),
       };
     }
   }
