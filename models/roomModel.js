@@ -9,10 +9,7 @@ const roomSchema = new mongoose.Schema({
     name: String,
     price: Number,
     capacity: Number,
-    amenities: [String],
-    images: [String],
-    available: Boolean,
-    quantityAvailable: Number
+    images: [String]
 });
 
 roomSchema.pre(/^find/, function (next) {
