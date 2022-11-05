@@ -42,7 +42,7 @@ exports.getOne = (Model) => async (req, res, next) => {
   if (!doc && doc.length > 0) {
     return next(new AppError("No document found with that ID", 404, res));
   }
-  console.log(doc[0]);
+  
   res.status(200).json({
     status: "success",
     data: doc[0],
