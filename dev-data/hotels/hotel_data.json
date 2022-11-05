@@ -1,0 +1,21 @@
+[
+    {
+        "hotelName": "Hotel 1",
+        "hotelPhone": "Phone 1",
+        "hotelEmail": "hotel1@email.com",
+        "password": "password1",
+        "hotelAddress": "Address 1",
+        "hotelCity": "City 1",
+        "hotelState": "State 1",
+        "hotelCountry": "Country 1",
+        "coordinates": [
+            20.301933,
+            85.860788
+        ],
+        "hotelDescription": "loremAd incididunt veniam occaecat do amet. Fugiat mollit velit irure eu elit officia est consectetur non pariatur commodo laboris aliquip. Ex magna aute dolor ea dolore. Do deserunt cillum dolor est ea do. Do aute duis magna amet enim consequat irure aliqua ex do consectetur. Labore occaecat duis anim esse ex proident.",
+        "hotelImages": [
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        ]
+    }
+]

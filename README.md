@@ -1,21 +1,74 @@
-# Pesto Assignments
+# Albergo
 
-Welcome to Pesto assignments.
+This is an online platform that allows people to rent short term accommodation/stays. This ranges from regular people with a hotel rooms, to property management firms who lease multiple rooms for short term. 
 
+# Table of Contents
 
-## How to solve assignments
+1. [Demo](#demo)
+2. [Installation](#installation)
+3. [Technology Stack](#technology-stack)
+4. [Authors](#authors)
+5. [License](#license)
 
-Weekly Assignments will be shared by your mentor or instructor.
+<br/>
 
-Make sure master or main branch is protected and you are not able to push any code directly to master.
+# Demo
 
-- Clone this repo to your local.
-- Checkout to new branch for submission. Suggestion you can name new branch week wise - branch for week 1 assignment can be week1
-```bash
-git checkout -b week1
-```
-- Create Assignment week folder in root directory(if it doesn't exist) for eg. for solving week 1 assignment create folder with name "week1".
-- You can create subfolders in main week(week1) folder if required.
-- Add proper readme [(How to Write proper readme](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) )in week's folder or subfolder explaining about assignment, how to run assignment and any other instructions. 
-- Raise a PR against master and add your mentor as reviewer
-- Resolve PR comments if any and once your mentor approves your PR, Merge it.
+[Live Demo](https://infinite-escarpment-54037.herokuapp.com/)
+
+<br/>
+
+Please Note:
+
+1. We recommend using this app on Postman.
+2. We are using JWT for authentication, the JWT gets stored either as a Bearer Token or in the cookies.
+
+<br/>
+Test Credentials:
+
+- User   
+
+    email : pestoproject@demoMail.com
+
+    password: Pesto@project123
+    
+- Partner
+
+    email : hotelPrestige@demogmail.com
+    
+    password : hotelPrestige@123
+
+<br/>
+
+# Installation
+
+- Fork or directly clone this repository to your local machine using the `git clone` command
+- Use the `npm install` command to install dependencies
+- Once the dependencies are finished installing, run `npm run dev` command to start the app in the development mode.
+- Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+
+<br/>
+
+# Technology Stack
+
+We tried to use a completely modern tech stack while testing out some new technologies that we had never used before. This resulted in a fast, performant, and easily-extensible web app that should be fairly future-proof for the coming next several years. We used:
+
+- [Node Js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Mongo DB](https://www.mongodb.com/)
+- [Mapbox](https://www.mapbox.com/)
+- [JWT](https://jwt.io/)
+
+<br/>
+
+# Authors
+
+- [Shobhit Sahoo](https://github.com/ShobhitSahoo)
+- [Siddhant Dalvi](https://github.com/Siddhant-ops)
+- [Rakesh Verma](https://github.com/rakeshverma89)
+
+<br/>
+
+# License
+
+[MIT](https://opensource.org/licenses/MIT)
