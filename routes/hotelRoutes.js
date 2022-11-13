@@ -1,64 +1,25 @@
-import {
-  createHotel,
-  getHotel,
-  updateHotel,
-  deleteHotel,
-  searchByCity,
-} from "./../controllers/hotelController";
-import { protect, restrictTo } from "./../controllers/authController";
-import reviewRouter from "./reviewRoutes";
-import { Router } from "express";
-import HotelModel from "../models/hotelModel";
+const express = require('express');
+const hotelController = require('./../controllers/hotelController');
+const authController = require('./../controllers/authController');
+const roomRouter = require('./roomRoutes');
+const reviewRouter = require('./reviewRoutes');
 
-const router = Router();
+const router = express.Router();
 
-router.use("/:id/reviews", reviewRouter);
+router.route('/').get(hotelController.getAllHotels);
 
-router.post("/onboard", async (req, res) => {
-  try {
-    const doc = await HotelModel.create(req.body);
+router.use('/:id/reviews', reviewRouter);
 
-    const payload = {
-      role: "partner",
-    };
+// router.use('/:id/rooms', roomRouter);
 
-    sign(
-      payload,
-      secret,
-      {
-        expiresIn: "7d",
-      },
-      (signErr, token) => {
-        if (signErr) throw signErr;
+// router.post('/onboard', hotelController.createHotel);
+router.post('/onboard', authController.signup)
 
-        return res.status(201).json({
-          token,
-        });
-      }
-    );
+router.route('/:slug')
+  .get(hotelController.getHotel)
+  .patch(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.updateHotel)
+  .delete(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.deleteHotel);
 
-    return res.status(201).json({
-      status: "success",
-      data: {
-        data: doc,
-      },
-    });
-  } catch (error) {
-    if (error) {
-      console.error(error);
-      return res.status(400).json({
-        error: error ?? "Please try again later",
-      });
-    }
-  }
-});
+router.post("/search", hotelController.searchByAny);
 
-router
-  .route("/:id")
-  .get(getHotel)
-  .patch(protect, restrictTo("Employee"), updateHotel)
-  .delete(protect, restrictTo("Employee"), deleteHotel);
-
-router.post("/searchByCity", searchByCity);
-
-export default router;
+module.exports = router;

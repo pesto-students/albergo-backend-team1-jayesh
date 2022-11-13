@@ -1,0 +1,2656 @@
+[
+    {
+        "name": "Goldfinch Hotel Delhi NCR",
+        "email": "goldfinch@mail.com",
+        "password": "Goldfinch@123",
+        "passwordConfirm": "Goldfinch@123",
+        "phone": "9893474821",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "address": "Plot No. 1, Sector 18, Dwarka, New Delhi, Delhi 110075",
+        "coordinates": {
+            "lat": 28.613939,
+            "long": 77.043479
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_10.jpg?alt=media&token=2645aa6e-c2e4-45a0-9b3c-1554cb1de1f7",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg?alt=media&token=1a89196e-f23e-4aee-b285-d2f519120614",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_1.jpg?alt=media&token=b084fb32-366e-4eb9-976a-f09f8af59dcf",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_11.jpg?alt=media&token=37d31725-5c6f-4926-8d07-06ed6d6ca8d2"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a670578",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service",
+                "Smoking Room"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "Novotel Goa Resort & Spa",
+        "email": "Novotel@gmail.com",
+        "password": "Novotel@234",
+        "passwordConfirm": "Novotel@234",
+        "phone": "9893474822",
+        "city": "Goa",
+        "state": "Goa",
+        "country": "India",
+        "address": "Goa,Goa 110071",
+        "coordinates": {
+            "lat": 17.74696909598671,
+            "long": 74.15612543788598
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget..",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_12.jpg?alt=media&token=ddbe4254-7d1b-47c3-8c2d-8c68ef8dc4d1",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_13.jpg?alt=media&token=ac02d02e-345b-4cda-b4ee-512e59dfe451",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_2.jpg?alt=media&token=4f826853-a90a-4436-b9e4-e39f26bc558f",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_15.jpg?alt=media&token=124439cb-59b1-419b-833c-f8e7c496271f"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa",
+                "Airport Shuttle",
+                "24/7 Front Desk"
+            ]
+        }
+    },
+    {
+        "name": "The Lalit Golf & Spa Resort",
+        "email": "TheLalitGolf@gmail.com",
+        "password": "Lalit@123",
+        "passwordConfirm": "Lalit@123",
+        "phone": "9893474823",
+        "city": "Palolem Beach",
+        "state": "Goa",
+        "country": "India",
+        "address": "Palolem Beach,110076",
+        "coordinates": {
+            "lat": 14.997735877037186,
+            "long": 74.04113342898493
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_14.jpg?alt=media&token=ec458224-073d-46db-91bd-c6a68a5b81a1",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_17.jpg?alt=media&token=aaf4bf11-d7a7-4aab-9059-3a2c85c05bc3",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_16.jpg?alt=media&token=c65f4145-06b2-4f93-b2a8-5839f0e4845d",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_18.jpg?alt=media&token=7023fc44-4ba7-4cd4-bd6c-71c9d6ad7304"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Gym",
+                "Spa",
+                "Airport Shuttle",
+                "24/7 Front Desk"
+            ]
+        }
+    },
+    {
+        "name": "The Orchid Hotel Mumbai Vile Parle",
+        "email": "TheOrchid@gmail.com",
+        "password": "Orchid@123",
+        "passwordConfirm": "Orchid@123",
+        "phone": "9893474824",
+        "city": "ville parle",
+        "state": "mumbai",
+        "country": "India",
+        "address": " Chhatrapati Shivaji International Airport,110043",
+        "coordinates": {
+            "lat": 19.74787487028184,
+            "long": 72.76778949214203
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_19.jpg?alt=media&token=015266b1-8070-4398-8e4d-4e79de24d00a",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_22.jpg?alt=media&token=9f52c9b2-8742-4cf0-9678-cabf35634806",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_27.jpg?alt=media&token=e6cf753a-3073-4519-8962-1de4db7678d9",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_26.jpg?alt=media&token=03d8a03b-191e-427b-89eb-835dc931d99e"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    ""
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Room Service",
+                "Smoking Room",
+                "In-room Dining",
+                "Complimentary breakfast"
+            ],
+            "premium": [
+                "Spa",
+                "Airport Shuttle",
+                "24/7 Front Desk",
+                "Gym",
+                "Spa",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "VITS Mumbai International Airport T2",
+        "email": "VITS@gmail.com",
+        "password": "VITSMumbai@123",
+        "passwordConfirm": "VITSMumbai@123",
+        "phone": "9893474825",
+        "city": "Andheri East",
+        "state": "Mumbai",
+        "country": "India",
+        "address": "Andheri East,400059",
+        "coordinates": {
+            "lat": 19.561642920331163,
+            "long": 72.74581683513694
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_20.jpg?alt=media&token=640a949e-bae8-4c70-a10f-0ad2cf736d98",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_28.jpg?alt=media&token=d3f60a5c-489f-498f-9854-dc1e5e957cf1",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_3.jpg?alt=media&token=f789f6ce-f301-4dad-b16d-7494ab40ca95",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_24.jpg?alt=media&token=b97449b3-4214-4919-8e7f-77ba9c3c8581"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa",
+                "Airport Shuttle"
+            ]
+        }
+    },
+    {
+        "name": "Ramada Plaza By Wyndham Palm Grove, Juhu, Mumbai",
+        "email": "Ramada Plaza@gmail.com",
+        "password": "Ramada@254",
+        "passwordConfirm": "Ramada@254",
+        "phone": "9893474827",
+        "city": "Juhu",
+        "state": "Mumbai",
+        "country": "India",
+        "address": "juhu,400049",
+        "coordinates": {
+            "lat": 19.098992617635748,
+            "long": 72.82636799535891
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_35.jpg?alt=media&token=6c71c755-eaa8-48ff-a20f-3f1eaf0177ed",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_21.jpg?alt=media&token=8e59ec83-3e34-4cc3-8dbd-736f7d4c6c84",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_23.jpg?alt=media&token=afa8e59f-c162-4141-83b7-1fe091c53b7b",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_32.jpg?alt=media&token=d323f5f1-60c6-4c63-80cc-c18e57406aba"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_49.jpg?alt=media&token=6fbad339-c81a-4534-9045-39dcc8448119",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_52.jpg?alt=media&token=7d5ca74c-b181-41d0-a9e8-3d1231755c7e"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_56.jpg?alt=media&token=fc60f17c-e599-4c6b-b80c-b2174f664de4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_58.jpg?alt=media&token=36e07fe8-17d1-456f-9134-d9031efb0b65"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_5.jpg?alt=media&token=268f7c5b-13bc-4546-b40a-2d24bfa87750",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_59.jpg?alt=media&token=102ad2fd-2ca1-4823-aaf1-62112de574d5"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service",
+                "Full Refund",
+                "Parking"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa",
+                "Airport Shuttle",
+                "24/7 Front Desk"
+            ]
+        }
+    },
+    {
+        "name": "Ginger Mumbai, Andheri East",
+        "email": "GingerMumbai@gmail.com",
+        "password": "Ginger@456",
+        "passwordConfirm": "Ginger@456",
+        "phone": "9893474828",
+        "city": "Andheri East",
+        "state": "Mumbai",
+        "country": "India",
+        "address": "Andheri East,110076",
+        "coordinates": {
+            "lat": 19.063972942664694,
+            "long": 72.92434572223657
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_25.jpg?alt=media&token=ce4fc070-8a16-45f1-a2c6-d344e2f1ae5d",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_31.jpg?alt=media&token=d9059755-9b84-4443-bc8a-a1738c7a2cd3",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_29.jpg?alt=media&token=09fd5417-ca4b-418a-857c-e9c18bcd45ff",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_41.jpg?alt=media&token=d3bf9d4a-a700-4b9a-a84d-93151b6085c2"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_54.jpg?alt=media&token=939c4882-a9e2-4b2e-b73e-8ee642da7841",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_35.jpg?alt=media&token=f124b145-b763-482b-beeb-b25d379ba784"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_31.jpg?alt=media&token=7c706125-87f8-4dd1-93f0-5b34dedde2b7",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_23.jpg?alt=media&token=d26e3645-bab2-4dba-a27e-0349c4ec5231"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_6.jpg?alt=media&token=4b4cec9e-3cdb-4fab-89ec-2deb8802dc1a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_44.jpg?alt=media&token=5d292749-2786-4c02-a24b-6b86a89f7a0e"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    ""
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service",
+                "Smoking Room"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "The Allure Grand (A centrally heated river side resort)",
+        "email": "TheAllureGrand@gmail.com",
+        "password": "Allure@456",
+        "passwordConfirm": "Allure@456",
+        "phone": "9893474829",
+        "city": "bahang",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "address": "bahang,175103",
+        "coordinates": {
+            "lat": 32.10225634957634,
+            "long": 77.0614525476574
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_44.jpg?alt=media&token=79976597-bd7d-4c87-ac5c-c0af62bb1aaa",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_37.jpg?alt=media&token=f5a67777-8bd2-4d4e-8033-6819da7289c6",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_36.jpg?alt=media&token=81c32fa9-bef8-4d70-a9a9-ded999d8be74",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_38.jpg?alt=media&token=2711bad6-faa2-4eae-a425-fb78c9b67b6c"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_10.jpg?alt=media&token=94582f5a-18bc-4535-9ea1-2774e34e1d7a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_8.jpg?alt=media&token=b41f4f3d-9127-4bae-9752-64aaea9f1ac9"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_43.jpg?alt=media&token=71f4df50-03be-496e-a288-a05de99cb4a0",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_53.jpg?alt=media&token=bd718675-fe98-4be8-84a9-ddeaf7c04571"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_48.jpg?alt=media&token=fa351d79-15b6-44bb-a73d-bd1f3e39ebcc",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_13.jpg?alt=media&token=2d4c006f-a729-4ea4-9b7e-9e15bebcea5f"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_18.jpg?alt=media&token=d788a587-48bb-4c2e-a6e8-dea275983710",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_45.jpg?alt=media&token=7789c66a-409e-4372-93d0-f9fd8fb98a54"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service",
+                "Smoking Room"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Gym",
+                "Spa"
+            ]
+        }
+    },
+    {
+        "name": "The Orchard Greens Resort and Spa ",
+        "email": "OrchardGreens@gmail.com",
+        "password": "Orchard@158",
+        "passwordConfirm": "Orchard@158",
+        "phone": "9893474830",
+        "city": "Manali",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "address": "Log Huts Area,Manali, 175131",
+        "coordinates": {
+            "lat": 32.05892564081641,
+            "long": 76.96777535015858
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_50.jpg?alt=media&token=4fe9de3e-e495-4f4d-b209-b38cd7bf714e",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_33.jpg?alt=media&token=b927b341-4330-42b3-8eb1-87cbdfa5d75a",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_4.jpg?alt=media&token=3acdca2b-5d62-4c8f-8ace-0cd0f97e6e1c",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_39.jpg?alt=media&token=d56bef59-b36a-4f1e-8707-3ac74a81abf4"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_9.jpg?alt=media&token=c4e66697-2b72-4f73-a89a-423275a58f5a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_7.jpg?alt=media&token=f517a508-00eb-4842-90cb-d21406467480"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a670578",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Smoking Room"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "Echor Himalayan Aurum | Mountain-view Rooms",
+        "email": "EchorHimalayanAurum@gmail.com",
+        "password": "EchorHimalayan@858",
+        "passwordConfirm": "EchorHimalayan@858",
+        "phone": "9893474831",
+        "city": "Manali",
+        "state": "Himanchal pradesh",
+        "country": "India",
+        "address": "Prini, Manali,175103",
+        "coordinates": {
+            "lat": 32.25230473084096,
+            "long": 77.19529622969993
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_46.jpg?alt=media&token=f3b73e17-17a2-4b7a-b3d2-fc1c5d721939",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_47.jpg?alt=media&token=ff479ac4-fb6d-4564-b5d1-bf30988b75c8",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_42.jpg?alt=media&token=1d138829-d39b-4031-b267-3f91e7e889d1"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Free Cancelation",
+                "Room Service"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Gym",
+                "Spa",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "Hotel HSP Suites",
+        "email": "HotelHSP@gmail.com",
+        "password": "HotelHSP@123",
+        "passwordConfirm": "HotelHSP@123",
+        "phone": "9893474832",
+        "city": "Delhi ",
+        "state": "Delhi",
+        "country": "India",
+        "address": "New Delhi, Delhi 110037",
+        "coordinates": {
+            "lat": 28.564031508414708,
+            "long": 77.10092192334932
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_45.jpg?alt=media&token=c93dda52-0ba5-4169-9fb4-78482e829c35",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_48.jpg?alt=media&token=78024a51-e35d-4560-b258-abe12e68c67e",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_52.jpg?alt=media&token=001d519b-1edb-4c73-8599-d8be9609a5e9",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_34.jpg?alt=media&token=3ff03163-253e-4eb7-81f9-ab1c64f2f3cf"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Cancelation",
+                "Room Service",
+                "Smoking Room"
+            ],
+            "premium": [
+                "Swimming Pool",
+                "Pet Allowed",
+                "Spa",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "Hotel Hari Piorko",
+        "email": "HotelHariPiorko@gmail.com",
+        "password": "HotelHari@757",
+        "passwordConfirm": "HotelHari@757",
+        "phone": "9893474835",
+        "city": "Paharganj, Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "address": "Paharganj, Delhi,110055",
+        "coordinates": {
+            "lat": 28.666158955513225,
+            "long": 77.22112644914462
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_55.jpg?alt=media&token=4426e127-58cf-4cf9-a0ac-5d3a80b7582d",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_40.jpg?alt=media&token=1f330def-b57f-4df8-a4f8-038747f5c302",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_49.jpg?alt=media&token=86552ad3-c1f6-482b-85df-dcedb0653bd8",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_51.jpg?alt=media&token=b24627a3-45e5-4215-8eab-ac78dbcc288f"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant"
+            ]
+        }
+    },
+    {
+        "name": "Hotel Konark & Restaurant",
+        "email": "HotelKonarkRestaurant@gmail.com",
+        "password": "HotelKonark@555",
+        "passwordConfirm": "HotelKonark@555",
+        "phone": "9893474836",
+        "city": "Gopalbari, Jaipur ",
+        "state": "Jaipur",
+        "country": "India",
+        "address": "Gopalbari, Jaipur,302006 ",
+        "coordinates": {
+            "lat": 26.921979869246787,
+            "long": 75.79690704479464
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_53.jpg?alt=media&token=79c97975-ec81-4eba-922c-fe897cfc2d0e",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_59.jpg?alt=media&token=1749e39f-dd85-4f7b-97ba-8934bdf45769",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_6.jpg?alt=media&token=6dc50b01-ee67-4758-8b58-977599cc3b73",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_56.jpg?alt=media&token=30787d86-9b9e-47b5-aa76-ff80fb99a866"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_52.jpg?alt=media&token=7d5ca74c-b181-41d0-a9e8-3d1231755c7e",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_56.jpg?alt=media&token=fc60f17c-e599-4c6b-b80c-b2174f664de4"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_49.jpg?alt=media&token=6fbad339-c81a-4534-9045-39dcc8448119",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_50.jpg?alt=media&token=7bbf1373-9b44-4d1e-b89b-1b07a2c57db4"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "HOTEL H R PALACE",
+        "email": "HOTELHRPALACE@gmail.com",
+        "password": "HOTELHR@888",
+        "passwordConfirm": "HOTELHR@888",
+        "phone": "9893474839",
+        "city": "Bani Park, Jaipur",
+        "state": "Jaipur",
+        "country": "India",
+        "address": "Bani Park, Jaipur,302016 ",
+        "coordinates": {
+            "lat": 26.92806170225339,
+            "long": 75.78910215482692
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_57.jpg?alt=media&token=b08fee52-8dc1-4ffc-9994-2ddbd6597336",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_60.jpg?alt=media&token=e25983cf-3a7d-427f-a20c-0ec508eba7d4",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_8.jpg?alt=media&token=5eaeb623-9135-41aa-a05f-0a579f458083",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_58.jpg?alt=media&token=d3126990-3810-4872-812f-64eb813cee12"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_58.jpg?alt=media&token=36e07fe8-17d1-456f-9134-d9031efb0b65",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_54.jpg?alt=media&token=939c4882-a9e2-4b2e-b73e-8ee642da7841"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_31.jpg?alt=media&token=7c706125-87f8-4dd1-93f0-5b34dedde2b7",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_23.jpg?alt=media&token=d26e3645-bab2-4dba-a27e-0349c4ec5231"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_5.jpg?alt=media&token=268f7c5b-13bc-4546-b40a-2d24bfa87750",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_53.jpg?alt=media&token=bd718675-fe98-4be8-84a9-ddeaf7c04571"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "Grand Mercure Bengaluru at Gopalan Mall, An Accor Hotels Brand",
+        "email": "GrandMercureBengaluru@gmail.com",
+        "password": "GopalanMall@123",
+        "passwordConfirm": "GopalanMall@12",
+        "phone": "9893474840",
+        "city": "C V Raman Nagar,Bangalore",
+        "state": "Karnataka",
+        "country": "India",
+        "address": "C V Raman Nagar,Bangalore,560093",
+        "coordinates": {
+            "lat": 12.9732550875129,
+            "long": 77.58413716437414
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_54.jpg?alt=media&token=ee71f1eb-8a86-48fd-bb63-f5fe6206cf1b",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_7.jpg?alt=media&token=e2e7b562-d52d-4131-b4f9-0c22263e4b2c",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_30.jpg?alt=media&token=c0632895-f688-4e76-9d60-36255897e9f0",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_9.jpg?alt=media&token=b52f2e06-907c-403c-8787-643d893ae49f"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_10.jpg?alt=media&token=94582f5a-18bc-4535-9ea1-2774e34e1d7a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_43.jpg?alt=media&token=71f4df50-03be-496e-a288-a05de99cb4a0"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_7.jpg?alt=media&token=f517a508-00eb-4842-90cb-d21406467480",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_44.jpg?alt=media&token=5d292749-2786-4c02-a24b-6b86a89f7a0e"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_45.jpg?alt=media&token=7789c66a-409e-4372-93d0-f9fd8fb98a54",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_9.jpg?alt=media&token=c4e66697-2b72-4f73-a89a-423275a58f5a"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_13.jpg?alt=media&token=2d4c006f-a729-4ea4-9b7e-9e15bebcea5f",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_6.jpg?alt=media&token=4b4cec9e-3cdb-4fab-89ec-2deb8802dc1a"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "24/7 Front Desk",
+                "Air Conditioning"
+            ]
+        }
+    },
+    {
+        "name": "Lemon Tree Premier Ulsoor Lake Bangalore",
+        "email": "LemonTreePremier@gmail.com",
+        "password": " UlsoorLake@456",
+        "passwordConfirm": " UlsoorLake@898",
+        "phone": "9893474821",
+        "city": "Sivanchetti Gardens, Bangalore",
+        "state": "Bangalore",
+        "country": "India",
+        "address": "Sivanchetti Gardens, Bangalore,560042",
+        "coordinates": {
+            "lat": 12.983560843670803,
+            "long": 77.61582528900519
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_5.jpg?alt=media&token=e33c60b4-c9a9-42a8-9b74-9d99dd8b9bdb",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_10.jpg?alt=media&token=2645aa6e-c2e4-45a0-9b3c-1554cb1de1f7",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_1.jpg?alt=media&token=b084fb32-366e-4eb9-976a-f09f8af59dcf",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg?alt=media&token=1a89196e-f23e-4aee-b285-d2f519120614"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_48.jpg?alt=media&token=fa351d79-15b6-44bb-a73d-bd1f3e39ebcc",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_8.jpg?alt=media&token=b41f4f3d-9127-4bae-9752-64aaea9f1ac9"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_35.jpg?alt=media&token=f124b145-b763-482b-beeb-b25d379ba784",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_59.jpg?alt=media&token=102ad2fd-2ca1-4823-aaf1-62112de574d5"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_19.jpg?alt=media&token=03cbb5d3-22cc-4bf7-8541-570b7a6705",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_26.jpg?alt=media&token=5403135e-0b3a-4b54-8f3f-0196941a6502"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_17.jpg?alt=media&token=9620baa1-7eff-4537-ba88-0b866e5587ff",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_15.jpg?alt=media&token=75768542-3915-404f-b87b-253290e5b5d4"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "Hotel Landmark Puri, Near to Sea Beach ",
+        "email": "HotelLandmarkPuri@gmail.com",
+        "password": "LandmarkPuri@444",
+        "passwordConfirm": "LandmarkPuri@444",
+        "phone": "9893474744",
+        "city": "Golden Beach,Puri",
+        "state": "odisha",
+        "country": "India",
+        "address": "Golden Beach, Puri,752002",
+        "coordinates": {
+            "lat": 19.81444829013448,
+            "long": 85.82980210822949
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_13.jpg?alt=media&token=ac02d02e-345b-4cda-b4ee-512e59dfe451",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_11.jpg?alt=media&token=37d31725-5c6f-4926-8d07-06ed6d6ca8d2",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_15.jpg?alt=media&token=124439cb-59b1-419b-833c-f8e7c496271f",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_12.jpg?alt=media&token=ddbe4254-7d1b-47c3-8c2d-8c68ef8dc4d1"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_32.jpg?alt=media&token=8f0e7511-960d-4764-97cd-e535b8da2da6",
+                    "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_24.jpg?alt=media&token=bcd2fa0e-7ea4-4491-86ec-7cd2f8adefa0"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_27.jpg?alt=media&token=b143e6b6-ac9a-4327-8034-49f40003a601",
+                    "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_1.jpg?alt=media&token=eb7d7e97-5c7c-438c-bf1e-01d605836e33"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_25.jpg?alt=media&token=c7cd4533-97ee-43c2-955e-730648975138",
+                    "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_36.jpg?alt=media&token=bdfbc8f9-b66c-4b30-8beb-1af6637c0eba"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_16.jpg?alt=media&token=0fd0e01e-47f8-43bb-acb2-e319db2ce3cb",
+                    "https: //firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_14.jpg?alt=media&token=56378d51-c66b-47c5-9754-a95337806e9c"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "Hotel Golden Tree",
+        "email": "HotelGoldenTree@gmail.com",
+        "password": "GoldenTree@898",
+        "passwordConfirm": "GoldenTree@898",
+        "phone": "9893474856",
+        "city": "Golden Beach,Puri",
+        "state": "Odisha",
+        "country": "India",
+        "address": "Golden Beach,Puri,759024",
+        "coordinates": {
+            "lat": 21.036483560314768,
+            "long": 85.7414192698520779
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_14.jpg?alt=media&token=ec458224-073d-46db-91bd-c6a68a5b81a1",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_2.jpg?alt=media&token=4f826853-a90a-4436-b9e4-e39f26bc558f",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_16.jpg?alt=media&token=c65f4145-06b2-4f93-b2a8-5839f0e4845d",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_17.jpg?alt=media&token=aaf4bf11-d7a7-4aab-9059-3a2c85c05bc3"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_20.jpg?alt=media&token=56397f99-2c17-4782-acb8-bc699af95852",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_29.jpg?alt=media&token=c3cdf57f-1266-4502-babb-961ce5cbf1cc"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_39.jpg?alt=media&token=0dd234c1-bdb5-497e-a367-00f87fc1748e",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_30.jpg?alt=media&token=3c6d3254-970c-4584-9aed-d0f0b80e15b1"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_11.jpg?alt=media&token=75880a82-b185-43db-a27f-c95bc5cd8bb4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_40.jpg?alt=media&token=96e851ae-5819-4561-8220-dd96dbfabbf5"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_4.jpg?alt=media&token=4ea68f6e-f7d7-45a8-abf9-8eb96e15423e",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_21.jpg?alt=media&token=a6cc3869-43e3-46ff-8e97-a9e586bcadf0"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "Hotel Prestige",
+        "email": "HotelPrestige@gmail.com",
+        "password": "Prestige@585",
+        "passwordConfirm": "Prestige@585",
+        "phone": "9893474858",
+        "city": "Mall Road, Shimla",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "address": "Mall Road, Shimla,171001",
+        "coordinates": {
+            "lat": 31.105223596516787,
+            "long": 77.17279734325128
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_26.jpg?alt=media&token=03d8a03b-191e-427b-89eb-835dc931d99e",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_20.jpg?alt=media&token=640a949e-bae8-4c70-a10f-0ad2cf736d98",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_28.jpg?alt=media&token=d3f60a5c-489f-498f-9854-dc1e5e957cf1",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_3.jpg?alt=media&token=f789f6ce-f301-4dad-b16d-7494ab40ca95"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_37.jpg?alt=media&token=b9954fa6-331e-4082-b8f5-75b1b2efa850",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_33.jpg?alt=media&token=49ab63c9-4317-4e0d-8053-2fbfa8fe2e6b"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_12.jpg?alt=media&token=aac95a61-ed4d-42dc-8feb-cdcd238de5d6",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_3.jpg?alt=media&token=b31387d5-b327-40b3-837d-32ad8e9561f9"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_41.jpg?alt=media&token=c8eee6fe-812a-490d-b154-96c8130e8929",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_28.jpg?alt=media&token=2fac91d8-d9bb-4a0c-971d-8b3d19508d9c"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_38.jpg?alt=media&token=30009947-656b-412d-aced-2f096ffa198c",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_2.jpg?alt=media&token=b011ef95-da2f-48c9-8cde-468616738ac6"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Full Refund",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    },
+    {
+        "name": "Snow Valley Heights",
+        "email": "SnowValleyHeights@gmail.com",
+        "password": "Heights@787",
+        "passwordConfirm": "Heights@787",
+        "phone": "9893474860",
+        "city": "Kachi Ghatti, Shimla",
+        "state": "Goa",
+        "country": "India",
+        "address": "Kachi Ghatti,Shimla,171010",
+        "coordinates": {
+            "lat": 31.09178546948629,
+            "long": 77.1388191758288
+        },
+        "role": "Hotel",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Volutpat commodo sed egestas egestas fringilla. Nibh praesent tristique magna sit amet purus gravida quis blandit. Vel fringilla est ullamcorper eget nulla facilisi. Duis ut diam quam nulla porttitor. Cursus mattis molestie a iaculis. Luctus accumsan tortor posuere ac ut consequat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. At lectus urna duis convallis convallis tellus id interdum. Ipsum dolor sit amet consectetur adipiscing elit. Tempor id eu nisl nunc. Congue eu consequat ac felis donec et odio pellentesque diam. Convallis aenean et tortor at risus viverra adipiscing at in. Et malesuada fames ac turpis egestas integer eget.",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_22.jpg?alt=media&token=9f52c9b2-8742-4cf0-9678-cabf35634806",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_18.jpg?alt=media&token=7023fc44-4ba7-4cd4-bd6c-71c9d6ad7304",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_27.jpg?alt=media&token=e6cf753a-3073-4519-8962-1de4db7678d9",
+            "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/unsplash_hotel_19.jpg?alt=media&token=015266b1-8070-4398-8e4d-4e79de24d00a"
+        ],
+        "rooms": [
+            {
+                "name": "Deluxe Room",
+                "price": 4000,
+                "capacity": 4,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_22.jpg?alt=media&token=cbe84d48-e78b-4859-a174-f6cac3e09534",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_34.jpg?alt=media&token=dc3d86c0-beb0-445b-bdd9-53c6a64b51e3"
+                ]
+            },
+            {
+                "name": "classic room",
+                "price": 2000,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_47.jpg?alt=media&token=be118ffd-25b0-440f-8f34-8d2574c33ba4",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_42.jpg?alt=media&token=2e35f4f5-899d-41a3-9784-f761698fa08a"
+                ]
+            },
+            {
+                "name": "standard Room",
+                "price": 1500,
+                "capacity": 2,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_46.jpg?alt=media&token=8a5341ed-b579-4e62-940d-696882b5ec61",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_55.jpg?alt=media&token=ed43a916-4055-4011-93a1-262d5bbc0759"
+                ]
+            },
+            {
+                "name": "family Room",
+                "price": 5000,
+                "capacity": 5,
+                "amenities": [
+                    "Free Wi-Fi",
+                    "Air Conditioning",
+                    "Electric Kettle",
+                    "Room Service",
+                    "Smoking Room",
+                    "Mineral Water - additional charge",
+                    "Daily Housekeeping",
+                    "Bathroom",
+                    "In-room Dining",
+                    "Laundry Service"
+                ],
+                "available": true,
+                "quantity": 10,
+                "images": [
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_51.jpg?alt=media&token=de91e56a-e665-4a0b-8040-1a3e929c7b3a",
+                    "https://firebasestorage.googleapis.com/v0/b/albergo-bbbb4.appspot.com/o/room%2Funsplash_room_57.jpg?alt=media&token=71fb5f68-40f1-4a09-9007-ba2b1a48a7eb"
+                ]
+            }
+        ],
+        "facilities": {
+            "basic": [
+                "Parking",
+                "Free Wi-Fi",
+                "Room Service",
+                "Full Refund",
+                "Air Conditioning"
+            ],
+            "premium": [
+                "Indoor Games",
+                "Swimming Pool",
+                "Pet Allowed",
+                "Bar",
+                "Restaurant",
+                "24/7 Front Desk",
+                "Air Conditioning",
+                "Daily Housekeeping"
+            ]
+        }
+    }
+]

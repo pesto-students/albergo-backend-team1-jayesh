@@ -4,27 +4,20 @@ import UserModel from "./../models/userModel";
 import Wishlist from "./../models/wishlistModel";
 import factory from "./handlerFactory";
 
-export const getOverview = async (req, res) => {
-  try {
-    const featuredHotels = await HotelModel.find({
-      isFeatured: { $eq: true },
-    }).limit(3);
+exports.getOverview = async (req, res, next) => {
+  const limit = (req.body.limit) ? req.body.limit : 10;
+  const featuredHotels = await Hotel.find({ isFeatured: { $eq: true } }).limit(limit);
 
-    const topRatedHotels = await HotelModel.find({})
-      .sort({ ratingsAverage: -1 })
-      .limit(3);
+  const topRatedHotels = await Hotel.find({}).sort({ ratingsAverage: -1 }).limit(limit);
 
-    const hotelView = {
-      featuredHotels,
-      topRatedHotels,
-    };
+  const latestHotels = await Hotel.find({}).sort({ createdAt: -1 }).limit(limit);
 
-    res.status(200).json(hotelView);
-  } catch (error) {
-    return res.status(400).json({
-      message: "Please try again later",
-    });
+  const hotelView = {
+    featuredHotels,
+    topRatedHotels,
+    latestHotels
   }
+  res.status(200).send(hotelView);
 };
 
 export const getHotel = getOne(HotelModel);

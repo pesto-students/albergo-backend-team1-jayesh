@@ -63,7 +63,7 @@ reviewSchema.statics.calcAverageRatings = async function (hotelId) {
     } else {
         await Hotel.findByIdAndUpdate(hotelId, {
             ratingsQuantity: 0,
-            ratingsAverage: 4.5
+            ratingsAverage: 3
         });
     }
 };
