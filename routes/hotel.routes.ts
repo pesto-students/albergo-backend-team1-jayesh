@@ -4,7 +4,6 @@ import { validationResult } from 'express-validator';
 import { allowRoleHotel, checkTokenRoleDB, validateToken, verifyToken } from '../middleware/auth.middleware';
 import { checkSlug, checkTokenSlugDB, hotelPatchMiddleware, hotelSearchMiddleware, hotelSignupMiddleware, paginateMiddleware, withinMiddleware } from '../middleware/hotel.middleware';
 import HotelModel from '../models/hotel.model';
-import ReviewModel from '../models/review.model';
 import RoomModel from '../models/room.model';
 import { generateUID, IPayload, sendPayload } from '../utils/helperFunctions';
 
@@ -46,6 +45,51 @@ router.get('/', [...paginateMiddleware], async (req: Request, res: Response) => 
         return res.status(200).json({
             data: docs
         });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+});
+
+router.get("/categories", [...paginateMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const page = req.query.page ?? 1;
+
+    const perPage = req.query.perPage ?? 10;
+
+    const skipCount = +page === 1 ? 0 : (+page - 1) * +perPage;
+
+    try {
+
+        const hotelCategoryDocs = await Promise.all([
+            HotelModel.find({
+                isFeatured: true
+            }).skip(skipCount).limit(+perPage),
+            HotelModel.find({}).sort({
+                "_id": "descending"
+            }).skip(skipCount).limit(+perPage),
+            HotelModel.find({}).sort({
+                "ratingsAverage": "descending"
+            }).skip(skipCount).limit(+perPage)
+        ]);
+
+        const result = {
+            featuredHotels: hotelCategoryDocs[0] ?? [],
+            topRatedHotels: hotelCategoryDocs[1] ?? [],
+            latestHotels: hotelCategoryDocs[2] ?? []
+        };
 
     } catch (error) {
         if (error) {
