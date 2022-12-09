@@ -52,26 +52,26 @@ export const checkTokenSlugDB = async (req: Request, res: Response, next: NextFu
 };
 
 export const hotelSignupMiddleware = [
-    body("name")
+    body("name", "name field should be a valid hotel name")
         .isString()
         .trim()
         .isLength({
             min: 5,
-        }).isAlphanumeric(),
+        }),
     body("email", "Invalid email")
         .isEmail()
         .normalizeEmail({
             all_lowercase: true,
         })
         .custom(async (value) => {
-            const docs = await Promise.all([
+            let docs = await Promise.all([
                 HotelModel.findOne({
                     email: value,
                 }), UserModel.findOne({
                     email: value,
                 })]);
 
-            if (docs.length > 0) {
+            if (docs[0] || docs[1]) {
                 return Promise.reject("Account already exists with this email");
             }
         }),
@@ -89,9 +89,7 @@ export const hotelSignupMiddleware = [
         .matches(/[~!@#$%^&*()_+-=\\]/)
         .withMessage("must contain a special character"),
     body("phone", "phone field should be a valid phone number")
-        .isMobilePhone("any", {
-            strictMode: true
-        }),
+        .isMobilePhone("any"),
     body("address", "address field should be valid address")
         .isString()
         .trim()
@@ -164,8 +162,15 @@ export const hotelPatchMiddleware = oneOf([
         .trim()
         .isLength({
             min: 10
-        }).withMessage("Shoulld have a min lenght of 10")
+        }).withMessage("Shoulld have a min lenght of 10"),
+    body("description", "description field should be a valid description").notEmpty(),
 ]);
+
+export const addPhotosMiddleware = body("photos", "photos field should be a valid array of object").isArray().notEmpty();
+
+export const deletePhotosMiddleware = body("imageRef", "imageRef field should be a valid ref of image").isString().notEmpty();
+
+export const facilitiesMiddleware = body("facilities", "facilities field should be a valid of facility object").isArray().notEmpty();
 
 export const hotelSearchMiddleware = query("query", "Please enter a valid query").isString().notEmpty().isLength({
     min: 3

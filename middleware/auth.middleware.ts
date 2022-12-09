@@ -5,13 +5,12 @@ import HotelModel from "../models/hotel.model";
 import UserModel from "../models/user.model";
 
 export const signupValidation = [
-    body("name")
+    body("name", "Please enter a valid name")
         .isString()
         .trim()
         .isLength({
             min: 3,
-        })
-        .isAlpha(),
+        }),
     body("email", "Invalid email")
         .isEmail()
         .normalizeEmail({
@@ -25,9 +24,12 @@ export const signupValidation = [
                     email: value,
                 })]);
 
-            if (docs.length > 0) {
+            const doc = docs[0] ?? docs[1] ?? null;
+
+            if (doc) {
                 return Promise.reject("Account already exists with this email");
             }
+
         }),
     body("password")
         .isLength({

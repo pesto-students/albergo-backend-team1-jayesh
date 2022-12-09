@@ -13,7 +13,7 @@ const hotelSchema = new Schema(
       unique: true
     },
     phone: {
-      type: Number,
+      type: String,
       required: true,
       unique: true
     },
@@ -46,7 +46,14 @@ const hotelSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    facilities: [String],
+    facilities: {
+      type: [
+        {
+          label: String,
+          icon: String,
+        }
+      ]
+    },
     coordinates: {
       long: Number,
       lat: Number
@@ -67,10 +74,14 @@ const hotelSchema = new Schema(
       default: []
     },
     description: {
-      type: String,
-      trim: true,
+      type: JSON,
     },
-    hotelImages: [String],
+    hotelImages: {
+      type: [{
+        link: String,
+        ref: String,
+      }],
+    },
     rooms: {
       type: [String],
       default: []

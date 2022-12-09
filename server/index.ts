@@ -7,6 +7,7 @@ import authRouter from "../routes/auth.routes";
 import hotelRouter from '../routes/hotel.routes';
 import reviewRouter from "../routes/review.routes";
 import roomRouter from "../routes/room.routes";
+import bookingRouter from "../routes/booking.routes";
 
 dotenv.config({ path: "./.env" });
 
@@ -28,6 +29,8 @@ app.use("/api/hotel", hotelRouter);
 app.use("/api/review", reviewRouter);
 
 app.use("/api/rooms", roomRouter);
+
+app.use("/api/booking", bookingRouter);
 
 app.listen(port, () =>
   console.log(`⚡⚡⚡ - Server listening on - http://localhost:${port}`)

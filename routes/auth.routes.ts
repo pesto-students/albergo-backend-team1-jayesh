@@ -4,7 +4,7 @@ import { validationResult } from "express-validator";
 import { loginValidation, signupValidation } from "../middleware/auth.middleware";
 import HotelModel from "../models/hotel.model";
 import UserModel from "../models/user.model";
-import { IPayload, sendPayload } from "../utils/helperFunctions";
+import { generateUID, IPayload, sendPayload } from "../utils/helperFunctions";
 
 const router = Router({
     caseSensitive: true,
@@ -28,12 +28,7 @@ router.post("/signup", [...signupValidation], async (req: Request, res: Response
 
         newUser.password = hashPassword;
 
-        const tempUUID = Buffer.from(
-            newUser.name + "__" + newUser.email,
-            "base64"
-        ).join("");
-
-        newUser.uuid = tempUUID;
+        newUser.uuid = generateUID(`${newUser.name} ${newUser.email}`, new Date().toString().replaceAll(" ", ""));
 
         const userDoc = await newUser.save();
 
@@ -41,12 +36,15 @@ router.post("/signup", [...signupValidation], async (req: Request, res: Response
             email: userDoc.email,
             name: userDoc.name,
             uuid: userDoc.uuid,
-            role: "USER"
+            role: "USER",
+            phone: userDoc.phone
         };
 
         const token = sendPayload(payload);
         return res.status(200).json({
-            token: token
+            data: {
+                token
+            }
         });
 
     } catch (error) {
@@ -85,12 +83,15 @@ router.post("/login", [...loginValidation], async (req: Request, res: Response) 
                 email: userDoc.email,
                 name: userDoc.name,
                 uuid: userDoc.uuid,
-                role: "USER"
+                role: "USER",
+                phone: userDoc.phone
             };
 
             const token = sendPayload(payload);
             return res.status(200).json({
-                token: token
+                data: {
+                    token
+                }
             });
         }
 
@@ -100,21 +101,25 @@ router.post("/login", [...loginValidation], async (req: Request, res: Response) 
 
             const passwordIsSame = await compare(req.body.password, hotelDoc.password);
 
-            if (!passwordIsSame)
+            if (!passwordIsSame) {
                 return res.status(400).json({
                     message: "Invalid credentials",
                 });
+            }
 
             const payload: IPayload = {
                 email: hotelDoc.email,
                 name: hotelDoc.name,
                 slug: hotelDoc.slug,
-                role: "HOTEL"
+                role: "HOTEL",
+                phone: hotelDoc.phone
             };
 
             const token = sendPayload(payload);
             return res.status(200).json({
-                token: token
+                data: {
+                    token
+                }
             });
         }
 

@@ -5,6 +5,7 @@ import { checkTokenUuidDB, wishlistIdMiddleware } from "../middleware/user.middl
 import HotelModel from "../models/hotel.model";
 import ReviewModel from "../models/review.model";
 import UserModel from "../models/user.model";
+import { defaultHotelProjectile } from "../utils/helperFunctions";
 
 const router = Router();
 
@@ -42,7 +43,6 @@ router.get("/me", [verifyToken, validateToken, allowRoleUser, checkTokenRoleDB, 
 
 router.get("/wishlist", [verifyToken, validateToken, allowRoleUser, checkTokenRoleDB, checkTokenUuidDB], async (req: Request, res: Response) => {
     const parsedToken = req.parsedToken;
-    const wishlistId = req.body.wishlistId;
 
     try {
 
@@ -70,15 +70,7 @@ router.get("/wishlist", [verifyToken, validateToken, allowRoleUser, checkTokenRo
             slug: {
                 $in: userWishlist
             }
-        }, {
-            slug: 1,
-            name: 1,
-            city: 1,
-            state: 1,
-            country: 1,
-            coordinates: 1,
-            hotelImages: 1,
-        });
+        }, defaultHotelProjectile);
 
         if (!hotelDocs || hotelDocs.length < 1) {
             return res.status(400).json({

@@ -8,6 +8,7 @@ import BookingModel from "../models/bookingModel";
 import HotelModel from "../models/hotel.model";
 import RoomModel from "../models/room.model";
 import UserModel from "../models/user.model";
+import { defaultHotelProjectile } from "../utils/helperFunctions";
 
 const router = Router();
 
@@ -49,15 +50,7 @@ router.get("/", [verifyToken, validateToken, checkTokenRoleDB, ...paginateMiddle
         bookingDocs.forEach(async bookingDoc => {
             const hotelDoc = await HotelModel.findOne({
                 slug: bookingDoc.hotelSlug
-            }, {
-                slug: 1,
-                name: 1,
-                city: 1,
-                state: 1,
-                country: 1,
-                coordinates: 1,
-                hotelImages: 1,
-            });
+            }, defaultHotelProjectile);
 
             if (!hotelDoc) {
                 return res.status(400).json({
@@ -178,7 +171,10 @@ router.post("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleUser, c
             }
         });
 
-        return res.sendStatus(200);
+        return res.status(200).json({
+            message: "Booking created successfully",
+            data: newBookingDoc
+        });
 
     } catch (error) {
         if (error) {

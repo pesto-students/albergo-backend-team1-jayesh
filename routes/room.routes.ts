@@ -1,15 +1,16 @@
 import { Request, Response, Router } from "express";
 import { validationResult } from "express-validator";
 import { allowRoleHotel, checkTokenRoleDB, validateToken, verifyToken } from "../middleware/auth.middleware";
-import { checkSlug, checkTokenSlugDB } from "../middleware/hotel.middleware";
-import { checkRoomId, createNewRoomMiddleware, updateRoomModel } from "../middleware/room.middleware";
+import { checkSlug, checkTokenSlugDB, deletePhotosMiddleware } from "../middleware/hotel.middleware";
+import { checkRoomId, createNewRoomMiddleware, deleteRoomModel, updateRoomModel } from "../middleware/room.middleware";
 import HotelModel from "../models/hotel.model";
 import RoomModel from "../models/room.model";
-import { generateUID } from "../utils/helperFunctions";
+import { defaultHotelProjectile, generateUID } from "../utils/helperFunctions";
 
 const router = Router();
 
-router.get('/:slug/', [checkSlug], async (req: Request, res: Response) => {
+router.get('/hotel/:slug/', [checkSlug], async (req: Request, res: Response) => {
+
     const expressValidatorErrors = validationResult(req);
 
     if (!expressValidatorErrors.isEmpty()) {
@@ -24,9 +25,7 @@ router.get('/:slug/', [checkSlug], async (req: Request, res: Response) => {
 
         const hotelDoc = await HotelModel.findOne({
             slug
-        }, {
-            rooms: 1
-        });
+        }, defaultHotelProjectile);
 
         if (!hotelDoc) {
             return res.status(400).json({
@@ -56,7 +55,10 @@ router.get('/:slug/', [checkSlug], async (req: Request, res: Response) => {
         }
 
         return res.status(200).json({
-            data: roomDocs
+            data: {
+                hotelData: hotelDoc,
+                rooms: roomDocs
+            }
         });
 
     } catch (error) {
@@ -71,6 +73,7 @@ router.get('/:slug/', [checkSlug], async (req: Request, res: Response) => {
 });
 
 router.post("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, ...createNewRoomMiddleware], async (req: Request, res: Response) => {
+
     const expressValidatorErrors = validationResult(req);
 
     if (!expressValidatorErrors.isEmpty()) {
@@ -90,8 +93,6 @@ router.post("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, 
             $push: {
                 "rooms": roomUUID
             }
-        }, {
-            new: true
         });
 
         if (!hotelDoc) {
@@ -113,20 +114,8 @@ router.post("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, 
             });
         }
 
-        const roomDocs = await RoomModel.find({
-            roomId: {
-                $in: hotelDoc.rooms
-            }
-        });
-
-        if (!roomDocs || roomDocs.length < 1) {
-            return res.status(400).json({
-                message: "Rooms Not found. Please try again later"
-            });
-        }
-
         return res.status(200).json({
-            data: roomDocs
+            data: newRoomDoc
         });
 
     } catch (error) {
@@ -158,6 +147,102 @@ router.get("/:roomId", [checkRoomId], async (req: Request, res: Response) => {
         if (!roomDoc) {
             return res.status(400).json({
                 message: "Rooms Not found. Please try again later"
+            });
+        }
+
+        return res.status(200).json({
+            data: roomDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+});
+
+router.patch("/:roomId/images", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, checkRoomId, deletePhotosMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const parsedToken = req.parsedToken;
+    const slug = parsedToken.slug;
+    const roomId = req.params.roomId;
+    const images = req.body.images;
+
+    try {
+        const roomDoc = await RoomModel.findOneAndUpdate({
+            roomId,
+            hotelSlug: slug,
+        }, {
+            $push: {
+                images: {
+                    $each: images,
+                }
+            }
+        }, {
+            new: true
+        });
+
+        if (!roomDoc) {
+            return res.status(400).json({
+                message: "Room Not found. Please try again later"
+            });
+        }
+
+        return res.status(200).json({
+            data: roomDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+});
+
+router.delete("/:roomId/images", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, checkRoomId, deletePhotosMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const parsedToken = req.parsedToken;
+    const slug = parsedToken.slug;
+    const roomId = req.params.roomId;
+    const imageRef = req.body.imageRef;
+
+    try {
+        const roomDoc = await RoomModel.findOneAndUpdate({
+            roomId,
+            hotelSlug: slug,
+        }, {
+            $pull: {
+                images: {
+                    ref: imageRef
+                }
+            }
+        }, {
+            new: true
+        });
+
+        if (!roomDoc) {
+            return res.status(400).json({
+                message: "Room Not found. Please try again later"
             });
         }
 
@@ -218,7 +303,7 @@ router.patch("/:roomId", [verifyToken, validateToken, checkTokenRoleDB, allowRol
     }
 });
 
-router.delete("/:roomId", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, checkRoomId, updateRoomModel], async (req: Request, res: Response) => {
+router.delete("/:roomId", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, checkRoomId, deleteRoomModel], async (req: Request, res: Response) => {
     const expressValidatorErrors = validationResult(req);
 
     if (!expressValidatorErrors.isEmpty()) {
@@ -246,7 +331,7 @@ router.delete("/:roomId", [verifyToken, validateToken, checkTokenRoleDB, allowRo
         const hotelDoc = await HotelModel.findOneAndUpdate({
             slug,
         }, {
-            $pullAll: {
+            $pull: {
                 rooms: roomId
             }
         }, {

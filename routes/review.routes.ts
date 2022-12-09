@@ -159,7 +159,10 @@ router.post('/:slug', [verifyToken, validateToken, checkTokenRoleDB, allowRoleUs
             });
         }
 
-        return res.sendStatus(200);
+        return res.status(200).json({
+            message: "Review created successfully",
+            data: reviewDoc
+        });
 
     } catch (error) {
         if (error) {

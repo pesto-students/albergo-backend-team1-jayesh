@@ -34,6 +34,10 @@ const userSchema = new Schema({
         default: "USER",
         immutable: true,
         required: true
+    },
+    phone: {
+        type: String,
+        required: true
     }
 });
 

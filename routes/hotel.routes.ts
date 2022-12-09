@@ -2,10 +2,10 @@ import { genSalt, hash } from 'bcryptjs';
 import { Request, Response, Router } from 'express';
 import { validationResult } from 'express-validator';
 import { allowRoleHotel, checkTokenRoleDB, validateToken, verifyToken } from '../middleware/auth.middleware';
-import { checkSlug, checkTokenSlugDB, hotelPatchMiddleware, hotelSearchMiddleware, hotelSignupMiddleware, paginateMiddleware, withinMiddleware } from '../middleware/hotel.middleware';
+import { facilitiesMiddleware, addPhotosMiddleware, checkSlug, checkTokenSlugDB, deletePhotosMiddleware, hotelPatchMiddleware, hotelSearchMiddleware, hotelSignupMiddleware, paginateMiddleware, withinMiddleware } from '../middleware/hotel.middleware';
 import HotelModel from '../models/hotel.model';
 import RoomModel from '../models/room.model';
-import { generateUID, IPayload, sendPayload } from '../utils/helperFunctions';
+import { defaultHotelProjectile, fullHotelProjectile, generateUID, IPayload, sendPayload } from '../utils/helperFunctions';
 
 const router = Router();
 
@@ -26,15 +26,7 @@ router.get('/', [...paginateMiddleware], async (req: Request, res: Response) => 
 
     try {
 
-        const docs = await HotelModel.find({}, {
-            slug: 1,
-            name: 1,
-            city: 1,
-            state: 1,
-            country: 1,
-            coordinates: 1,
-            hotelImages: 1,
-        }).skip(skipCount).limit(+perPage);
+        const docs = await HotelModel.find({}, defaultHotelProjectile).skip(skipCount).limit(+perPage);
 
         if (!docs || docs.length < 1) {
             return res.status(403).json({
@@ -74,22 +66,56 @@ router.get("/categories", [...paginateMiddleware], async (req: Request, res: Res
     try {
 
         const hotelCategoryDocs = await Promise.all([
-            HotelModel.find({
-                isFeatured: true
-            }).skip(skipCount).limit(+perPage),
-            HotelModel.find({}).sort({
-                "_id": "descending"
-            }).skip(skipCount).limit(+perPage),
-            HotelModel.find({}).sort({
-                "ratingsAverage": "descending"
-            }).skip(skipCount).limit(+perPage)
+            HotelModel
+                .find({
+                    isFeatured: true
+                }, defaultHotelProjectile)
+                .skip(skipCount)
+                .limit(+perPage),
+            HotelModel
+                .find({},
+                    defaultHotelProjectile)
+                .sort({
+                    "_id": "descending"
+                })
+                .skip(skipCount)
+                .limit(+perPage),
+            HotelModel
+                .find({},
+                    defaultHotelProjectile)
+                .sort({
+                    "ratingsAverage": "descending"
+                })
+                .skip(skipCount)
+                .limit(+perPage)
         ]);
 
-        const result = {
-            featuredHotels: hotelCategoryDocs[0] ?? [],
-            topRatedHotels: hotelCategoryDocs[1] ?? [],
-            latestHotels: hotelCategoryDocs[2] ?? []
-        };
+        if (hotelCategoryDocs[0].length < 1 || hotelCategoryDocs[1].length < 1 || hotelCategoryDocs[2].length < 1) {
+            return res.status(400).json({
+                message: "No hotels available"
+            });
+        }
+
+        const data = [
+            {
+                category: "featured Hotels",
+                data: hotelCategoryDocs[0] ?? []
+            },
+            {
+                category: "topRated Hotels",
+                data: hotelCategoryDocs[1] ?? []
+            },
+            {
+                category: "latest Hotels",
+                data: hotelCategoryDocs[2] ?? []
+            }
+        ];
+
+        return res
+            .status(200)
+            .json({
+                data: data.filter(predicate => predicate.data.length >= 1)
+            });
 
     } catch (error) {
         if (error) {
@@ -127,7 +153,8 @@ router.post("/signup", [...hotelSignupMiddleware], async (req: Request, res: Res
             email: hotelDoc.email,
             name: hotelDoc.name,
             uuid: hotelDoc.slug,
-            role: "HOTEL"
+            role: "HOTEL",
+            phone: hotelDoc.phone,
         };
 
         const token = sendPayload(payload);
@@ -157,25 +184,7 @@ router.get("/:slug", checkSlug, async (req: Request, res: Response) => {
     const slug = req.params.slug;
 
     try {
-        const doc = await HotelModel.findOne({ slug }, {
-            slug: 1,
-            name: 1,
-            city: 1,
-            state: 1,
-            country: 1,
-            coordinates: 1,
-            hotelImages: 1,
-            address: 1,
-            description: 1,
-            email: 1,
-            facilities: 1,
-            isFeatured: 1,
-            phone: 1,
-            reviews: 1,
-            ratingsAverage: 1,
-            ratingsQuantity: 1,
-            rooms: 1
-        });
+        const doc = await HotelModel.findOne({ slug }, fullHotelProjectile);
 
         const docRooms = doc?.rooms;
 
@@ -195,7 +204,10 @@ router.get("/:slug", checkSlug, async (req: Request, res: Response) => {
 
             if (roomDocs && roomDocs.length >= 1) {
                 return res.status(200).json({
-                    data: { ...doc, rooms: roomDocs }
+                    data: {
+                        ...doc.toJSON(),
+                        rooms: roomDocs
+                    }
                 });
             }
         }
@@ -227,29 +239,12 @@ router.patch("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel,
 
     try {
 
+
         const hotelDoc = await HotelModel.findOneAndUpdate({
             slug: token.slug
         }, { ...req.body }, {
             new: true,
-            projection: {
-                slug: 1,
-                name: 1,
-                city: 1,
-                state: 1,
-                country: 1,
-                coordinates: 1,
-                hotelImages: 1,
-                address: 1,
-                description: 1,
-                email: 1,
-                facilities: 1,
-                isFeatured: 1,
-                phone: 1,
-                reviews: 1,
-                ratingsAverage: 1,
-                ratingsQuantity: 1,
-                rooms: 1
-            }
+            projection: fullHotelProjectile
         });
 
         if (!hotelDoc) {
@@ -270,7 +265,10 @@ router.patch("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel,
 
             if (roomDocs.length >= 1) {
                 return res.status(200).json({
-                    data: { ...hotelDoc, rooms: roomDocs }
+                    data: {
+                        ...hotelDoc.toJSON(),
+                        rooms: roomDocs
+                    }
                 });
             }
         }
@@ -287,6 +285,105 @@ router.patch("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel,
             });
         }
     }
+});
+
+router.post("/photo", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, addPhotosMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const token = req.parsedToken;
+
+    try {
+
+        const hotelDoc = await HotelModel.findOneAndUpdate({
+            slug: token.slug
+        }, {
+            $push: {
+                hotelImages: {
+                    $each: req.body.photos
+                }
+            }
+        }, {
+            new: true,
+            projection: {
+                hotelImages: 1
+            }
+        });
+
+        if (!hotelDoc) {
+            return res.status(400).json({
+                message: "Hotel Not found"
+            });
+        }
+
+        return res.status(201).json({
+            data: hotelDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+
+});
+
+router.delete("/photo", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, deletePhotosMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const token = req.parsedToken;
+    const imageRef = req.body.imageRef;
+
+    try {
+
+        const hotelDoc = await HotelModel.findOneAndUpdate({
+            slug: token.slug
+        }, {
+            $pull: {
+                hotelImages: {
+                    "ref": imageRef
+                }
+            }
+        }, {
+            new: true,
+            projection: {
+                hotelImages: 1
+            }
+        });
+
+        if (!hotelDoc) {
+            return res.status(400).json({
+                message: "Hotel Not found"
+            });
+        }
+
+        return res.status(202).json({
+            data: hotelDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+
 });
 
 router.delete("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB], async (req: Request, res: Response) => {
@@ -328,10 +425,14 @@ router.delete("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel
                 });
             }
 
-            return res.sendStatus(200);
+            return res.status(200).json({
+                message: "Hotel and rooms deleted successfully"
+            });
         }
 
-        return res.sendStatus(200);
+        return res.status(200).json({
+            message: "Hotel deleted successfully"
+        });
 
     } catch (error) {
         if (error) {
@@ -343,12 +444,7 @@ router.delete("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel
     }
 });
 
-// router.route('/:slug')
-//   .get(hotelController.getHotel)
-//   .patch(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.updateHotel)
-//   .delete(authController.protect, authController.restrictTo('Employee', 'Hotel'), hotelController.deleteHotel);
-
-router.post("/search", [hotelSearchMiddleware], async (req: Request, res: Response) => {
+router.post("/facility", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, facilitiesMiddleware], async (req: Request, res: Response) => {
     const expressValidatorErrors = validationResult(req);
 
     if (!expressValidatorErrors.isEmpty()) {
@@ -357,37 +453,129 @@ router.post("/search", [hotelSearchMiddleware], async (req: Request, res: Respon
         });
     }
 
-    const { query } = req.query;
+    const token = req.parsedToken;
+    const facilities = req.body.facilities;
+
+    try {
+        const hotelDoc = await HotelModel.findOneAndUpdate({
+            slug: token.slug
+        }, {
+            $push: {
+                facilities: {
+                    $each: facilities
+                }
+            }
+        }, {
+            new: true,
+            projection: {
+                facilities: 1
+            }
+        });
+
+        if (!hotelDoc) {
+            return res.status(400).json({
+                message: "Hotel Not found"
+            });
+        }
+
+        return res.status(201).json({
+            data: hotelDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+});
+
+router.delete("/facility", [verifyToken, validateToken, checkTokenRoleDB, allowRoleHotel, checkTokenSlugDB, facilitiesMiddleware], async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
+
+    const token = req.parsedToken;
+    const facilities = req.body.facilities;
+    try {
+        const hotelDoc = await HotelModel.findOneAndUpdate({
+            slug: token.slug
+        }, {
+            $pull: {
+                facilities: {
+                    label: {
+                        $in: facilities
+                    }
+                }
+            }
+        }, {
+            new: true,
+            projection: {
+                facilities: 1
+            }
+        });
+
+        if (!hotelDoc) {
+            return res.status(400).json({
+                message: "Hotel Not found"
+            });
+        }
+
+        return res.status(201).json({
+            data: hotelDoc
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+});
+
+router.post("/search", async (req: Request, res: Response) => {
+    const expressValidatorErrors = validationResult(req);
+
+    if (!expressValidatorErrors.isEmpty()) {
+        return res.status(400).json({
+            error: expressValidatorErrors.array(),
+        });
+    }
 
     try {
 
+        const { name, city, state, country } = req.body;
+
+        // search for hotels with the given name, city, state and country which can be undefined or empty string or null or any other falsy value and return the default hotel projection
+
+
+
         const docs = await HotelModel.find({
-            $or: [
-                {
-                    name: query
-                },
-                {
-                    state: query
-                },
-                {
-                    city: query
-                },
-                {
-                    country: query
-                },
-                {
-                    address: query
-                },
-            ]
-        }, {
-            slug: 1,
-            name: 1,
-            city: 1,
-            state: 1,
-            country: 1,
-            coordinates: 1,
-            hotelImages: 1,
-        });
+            name: {
+                $regex: name ?? "",
+                $options: "i"
+            },
+            city: {
+                $regex: city ?? "",
+                $options: "i"
+            },
+            state: {
+                $regex: state ?? "",
+                $options: "i"
+            },
+            country: {
+                $regex: country ?? "",
+                $options: "i"
+            }
+        }, defaultHotelProjectile);
 
         if (!docs || docs.length < 1) {
             return res.status(400).json({
@@ -395,7 +583,7 @@ router.post("/search", [hotelSearchMiddleware], async (req: Request, res: Respon
             });
         }
 
-        res.status(200).json({
+        return res.status(200).json({
             data: docs
         });
 
@@ -441,15 +629,8 @@ router.get("/within", [...withinMiddleware], async (req: Request, res: Response)
                     ]
                 }
             },
-        }, {
-            slug: 1,
-            name: 1,
-            city: 1,
-            state: 1,
-            country: 1,
-            coordinates: 1,
-            hotelImages: 1,
-        });
+        }, defaultHotelProjectile
+        );
 
         if (!hotelDocs || hotelDocs.length < 1) {
             return res.status(403).json({

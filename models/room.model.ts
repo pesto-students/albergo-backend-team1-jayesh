@@ -18,25 +18,18 @@ const roomSchema = new Schema({
     price: Number,
     capacity: Number,
     images: {
-        type: [String],
-        required: true,
+        type: [{
+            link: String,
+            ref: String,
+        }],
+        default: []
     },
-    facilities: {
-        type: [String],
-        required: true
-    }
+    description: JSON,
+    quantity: Number,
 });
 
-// roomSchema.pre(/^find/, function (next) {
-//     this.populate('hotel').populate({
-//         path: 'hotel',
-//         select: 'name'
-//     });
-//     next();
-// });
+type IRoomModel = InferSchemaType<typeof roomSchema>;
 
-type IHotelModel = InferSchemaType<typeof roomSchema>;
-
-const RoomModel: Model<IHotelModel> = models[Model_Names.roomModel] || model(Model_Names.roomModel, roomSchema, "rooms");
+const RoomModel: Model<IRoomModel> = models[Model_Names.roomModel] || model(Model_Names.roomModel, roomSchema, "rooms");
 
 export default RoomModel;

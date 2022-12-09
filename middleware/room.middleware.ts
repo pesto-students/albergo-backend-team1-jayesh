@@ -3,7 +3,6 @@ import { body, oneOf, param } from "express-validator";
 export const createNewRoomMiddleware = [
     body("name", "A valid room name is required")
         .isString()
-        .isAlpha()
         .notEmpty()
         .isLength({
             min: 3
@@ -18,9 +17,11 @@ export const createNewRoomMiddleware = [
         .optional({
             checkFalsy: true
         }),
-    body("images", "Array of links of room images required")
-        .isArray()
+    body("description", "Valid room description is required")
         .notEmpty(),
+    body("quantity", "Valid room quantity is required").isNumeric().optional({
+        checkFalsy: true
+    }),
 ];
 
 export const checkRoomId = param("roomId", "Room id should be a valid param")
@@ -52,3 +53,7 @@ export const updateRoomModel = oneOf([
         .isArray()
         .notEmpty(),
 ]);
+
+export const deleteRoomModel = param("roomId", "Room id should be a valid param").isString().notEmpty().isLength({
+    min: 4
+});

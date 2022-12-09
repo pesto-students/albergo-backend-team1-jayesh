@@ -18,6 +18,7 @@ export interface IPayload {
     slug?: string;
     uuid?: string;
     role: ROLE;
+    phone: string;
 }
 
 export const sendPayload = (payload: IPayload) => {
@@ -33,4 +34,36 @@ export const sendPayload = (payload: IPayload) => {
     } catch (error) {
         throw error;
     }
+};
+
+export const defaultHotelProjectile = {
+    slug: 1,
+    name: 1,
+    city: 1,
+    state: 1,
+    country: 1,
+    coordinates: 1,
+    hotelImages: 1,
+    ratingsAverage: 1,
+    rooms: 1
+};
+
+export const fullHotelProjectile = {
+    slug: 1,
+    name: 1,
+    city: 1,
+    state: 1,
+    country: 1,
+    coordinates: 1,
+    hotelImages: 1,
+    address: 1,
+    description: 1,
+    email: 1,
+    facilities: 1,
+    isFeatured: 1,
+    phone: 1,
+    reviews: 1,
+    ratingsAverage: 1,
+    ratingsQuantity: 1,
+    rooms: 1
 };

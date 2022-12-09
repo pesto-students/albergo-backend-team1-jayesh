@@ -37,7 +37,7 @@ export const checkTokenUuidDB = async (req: Request, res: Response, next: NextFu
 
         if (doc.uuid !== parsedToken.uuid) {
             return res.status(400).json({
-                message: "Account uuid not invalid"
+                message: "Account uuid not valid"
             });
         }
 
