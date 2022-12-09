@@ -4,7 +4,7 @@ import { allowRoleUser, checkTokenRoleDB, validateToken, verifyToken } from "../
 import { createBookingMiddleware } from "../middleware/bookings.middleware";
 import { checkTokenSlugDB, paginateMiddleware } from "../middleware/hotel.middleware";
 import { checkTokenUuidDB } from "../middleware/user.middleware";
-import BookingModel from "../models/bookingModel";
+import BookingModel from "../models/booking.model";
 import HotelModel from "../models/hotel.model";
 import RoomModel from "../models/room.model";
 import UserModel from "../models/user.model";

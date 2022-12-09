@@ -64,7 +64,7 @@ export const hotelSignupMiddleware = [
             all_lowercase: true,
         })
         .custom(async (value) => {
-            let docs = await Promise.all([
+            const docs = await Promise.all([
                 HotelModel.findOne({
                     email: value,
                 }), UserModel.findOne({

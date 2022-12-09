@@ -159,7 +159,9 @@ router.post("/signup", [...hotelSignupMiddleware], async (req: Request, res: Res
 
         const token = sendPayload(payload);
         return res.status(200).json({
-            token: token
+            data: {
+                token
+            }
         });
 
     } catch (error) {
