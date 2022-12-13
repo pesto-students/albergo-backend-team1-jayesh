@@ -67,3 +67,13 @@ export const fullHotelProjectile = {
     ratingsQuantity: 1,
     rooms: 1
 };
+
+export const defaultUserProjectile = {
+    name: 1,
+    email: 1,
+    uuid: 1,
+    wishlist: 1,
+    bookings: 1,
+    reviews: 1,
+    phone: 1,
+};
