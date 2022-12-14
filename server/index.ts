@@ -20,6 +20,10 @@ app.use(cors());
 
 dbConnect();
 
+app.use("/", (req, res) => {
+  return res.status(200).json({ message: "Hello World" });
+});
+
 app.use("/api/auth", authRouter);
 
 app.use("/api/users", userRouter);
