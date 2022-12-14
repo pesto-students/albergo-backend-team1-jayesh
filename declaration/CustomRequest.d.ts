@@ -2,7 +2,6 @@ declare namespace Express {
 
   type ROLE = "USER" | "HOTEL";
 
-
   interface IParsedToken {
     email: string;
     name: string;

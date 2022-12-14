@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { body } from "express-validator";
+import { body, param } from "express-validator";
 import HotelModel from "../models/hotel.model";
 import UserModel from "../models/user.model";
 
@@ -47,7 +47,6 @@ export const createBookingMiddleware = [
         .isLength({
             min: 3
         }),
-
 ];
 
 export const checkSlugOrUUID = async (req: Request, res: Response, next: NextFunction) => {
@@ -104,3 +103,7 @@ export const checkSlugOrUUID = async (req: Request, res: Response, next: NextFun
         }
     }
 };
+
+export const checkBookingId = param("bookingId", "bookingId should be a valid string").isString().notEmpty().isLength({
+    min: 4
+});

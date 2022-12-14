@@ -2,7 +2,7 @@ import { genSalt, hash } from 'bcryptjs';
 import { Request, Response, Router } from 'express';
 import { validationResult } from 'express-validator';
 import { allowRoleHotel, checkTokenRoleDB, validateToken, verifyToken } from '../middleware/auth.middleware';
-import { facilitiesMiddleware, addPhotosMiddleware, checkSlug, checkTokenSlugDB, deletePhotosMiddleware, hotelPatchMiddleware, hotelSearchMiddleware, hotelSignupMiddleware, paginateMiddleware, withinMiddleware } from '../middleware/hotel.middleware';
+import { facilitiesMiddleware, addPhotosMiddleware, checkSlug, checkTokenSlugDB, deletePhotosMiddleware, hotelPatchMiddleware, hotelSignupMiddleware, paginateMiddleware, withinMiddleware } from '../middleware/hotel.middleware';
 import HotelModel from '../models/hotel.model';
 import RoomModel from '../models/room.model';
 import { defaultHotelProjectile, fullHotelProjectile, generateUID, IPayload, sendPayload } from '../utils/helperFunctions';

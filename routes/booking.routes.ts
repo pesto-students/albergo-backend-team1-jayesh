@@ -1,14 +1,14 @@
-import { NextFunction, Request, Response, Router } from "express";
-import { body, query, validationResult } from "express-validator";
+import { Request, Response, Router } from "express";
+import { validationResult } from "express-validator";
+import { Document } from "mongoose";
 import { allowRoleUser, checkTokenRoleDB, validateToken, verifyToken } from "../middleware/auth.middleware";
-import { checkSlugOrUUID, createBookingMiddleware } from "../middleware/bookings.middleware";
-import { checkTokenSlugDB, paginateMiddleware } from "../middleware/hotel.middleware";
+import { checkBookingId, checkSlugOrUUID, createBookingMiddleware } from "../middleware/bookings.middleware";
+import { paginateMiddleware } from "../middleware/hotel.middleware";
 import { checkTokenUuidDB } from "../middleware/user.middleware";
 import BookingModel from "../models/booking.model";
 import HotelModel from "../models/hotel.model";
-import RoomModel from "../models/room.model";
 import UserModel from "../models/user.model";
-import { generateUID } from "../utils/helperFunctions";
+import { defaultUserProjectile, generateUID } from "../utils/helperFunctions";
 
 const router = Router();
 
@@ -70,16 +70,7 @@ router.get("/", [verifyToken, validateToken, checkTokenRoleDB, ...paginateMiddle
             });
         }
 
-        const bookingDocs = await BookingModel.find(findQuery, {
-            bookingId: 1,
-            hotelSlug: 1,
-            checkIn: 1,
-            checkOut: 1,
-            amount: 1,
-            userUUID: 1,
-            userName: 1,
-            hotelName: 1,
-        }).skip(skipCount).limit(+perPage);
+        const bookingDocs = await BookingModel.find(findQuery).skip(skipCount).limit(+perPage);
 
 
         if (!bookingDocs || bookingDocs.length < 1) {
@@ -169,9 +160,8 @@ router.post("/", [verifyToken, validateToken, checkTokenRoleDB, allowRoleUser, c
     }
 });
 
-router.get("/:id", [verifyToken, validateToken, checkTokenRoleDB, body("bookingId", "bookingId should be a valid string").isString().notEmpty().isLength({
-    min: 4
-})], async (req: Request, res: Response) => {
+router.get("/:bookingId", [verifyToken, validateToken, checkTokenRoleDB, checkBookingId], async (req: Request, res: Response) => {
+
     const expressValidatorErrors = validationResult(req);
 
     if (!expressValidatorErrors.isEmpty()) {
@@ -182,92 +172,56 @@ router.get("/:id", [verifyToken, validateToken, checkTokenRoleDB, body("bookingI
 
     const parsedToken = req.parsedToken;
 
-    if (parsedToken?.slug) {
-        try {
-            const doc = await HotelModel.findOne({
-                email: parsedToken.email
+    const bookingId = req.params.bookingId;
+
+    try {
+
+        const query = {
+            bookingId,
+            hotelSlug: parsedToken.slug ?? undefined,
+            userUUID: parsedToken.uuid ?? undefined
+        };
+
+        const findQuery = Object.keys(query).reduce((acc: any, key) => {
+            if (query[key as keyof typeof query] !== undefined) {
+                acc[key] = query[key as keyof typeof query];
+            }
+            return acc;
+        }, {});
+
+        const bookingDoc = await BookingModel.findOne(findQuery);
+
+        if (!bookingDoc) {
+            return res.status(400).json({
+                message: "Booking not found"
             });
+        }
 
-            if (!doc) {
-                return res.status(400).json({
-                    message: "Account not found"
-                });
-            }
+        const userDoc = await UserModel.findOne({
+            uuid: bookingDoc?.userUUID
+        }, defaultUserProjectile);
 
-            if (doc.slug !== parsedToken.slug) {
-                return res.status(400).json({
-                    message: "Account slug invalid"
-                });
-            }
+        if (!userDoc) {
+            return res.status(400).json({
+                message: "User not found"
+            });
+        }
 
-        } catch (error) {
-            if (error) {
-                console.error(error);
-                return res.status(400).json({
-                    error,
-                });
+        return res.status(200).json({
+            data: {
+                bookingDoc,
+                userDoc
             }
+        });
+
+    } catch (error) {
+        if (error) {
+            console.error(error);
+            return res.status(400).json({
+                error,
+            });
         }
     }
-
-    if (parsedToken?.uuid) {
-        try {
-            const doc = await UserModel.findOne({
-                email: parsedToken.email
-            });
-
-            if (!doc) {
-                return res.status(400).json({
-                    message: "Account not found"
-                });
-            }
-
-            if (doc.uuid !== parsedToken.uuid) {
-                return res.status(400).json({
-                    message: "Account uuid not valid"
-                });
-            }
-
-        } catch (error) {
-            if (error) {
-                console.error(error);
-                return res.status(400).json({
-                    error,
-                });
-            }
-        }
-    }
-
-    // try {
-
-
-    // if (!bookingDoc) {
-    //     return res.status(400).json({
-    //         message: "Booking not found"
-    //     });
-    // }
-
-    // const hotelDoc = await HotelModel.findOne({
-    //     slug: bookingDoc.hotelSlug
-    // });
-
-    // if (!hotelDoc) {
-    //     return res.status(400).json({
-    //         message: "Hotel not found"
-    //     });
-    // }
-
-    // const userDoc = await UserModel.findOne({
-    //     uuid: bookingDoc.userUUID
-
-    // } catch (error) {
-    //     if (error) {
-    //         console.error(error);
-    //         return res.status(400).json({
-    //             error,
-    //         });
-    //     }
-    // }
 });
 
 export default router;

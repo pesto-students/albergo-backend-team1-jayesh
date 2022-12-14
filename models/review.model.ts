@@ -1,4 +1,4 @@
-import { InferSchemaType, Model, model, models, Schema, Types } from "mongoose";
+import { InferSchemaType, Model, model, models, Schema } from "mongoose";
 import { Model_Names } from "../utils/constants";
 
 const reviewSchema = new Schema({

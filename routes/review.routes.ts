@@ -1,6 +1,5 @@
 import { Request, Response, Router } from "express";
 import { validationResult } from "express-validator";
-import { Types } from "mongoose";
 import { allowRoleUser, checkTokenRoleDB, validateToken, verifyToken } from "../middleware/auth.middleware";
 import { checkSlug, paginateMiddleware } from "../middleware/hotel.middleware";
 import { createReviewMiddleware } from "../middleware/review.middleware";

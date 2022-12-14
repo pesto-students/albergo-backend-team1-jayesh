@@ -16,6 +16,7 @@ const bookingSchema = new Schema({
     },
     room: {
         type: {
+            roomName: String,
             roomId: String,
             quantity: Number
         },
@@ -29,8 +30,14 @@ const bookingSchema = new Schema({
     },
     guest: {
         type: {
-            adults: Number,
-            children: Number
+            adults: {
+                type: Number,
+                default: 1
+            },
+            children: {
+                type: Number,
+                default: 0
+            }
         },
         required: true
     },
