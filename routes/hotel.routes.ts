@@ -90,12 +90,6 @@ router.get("/categories", [...paginateMiddleware], async (req: Request, res: Res
                 .limit(+perPage)
         ]);
 
-        if (hotelCategoryDocs[0].length < 1 || hotelCategoryDocs[1].length < 1 || hotelCategoryDocs[2].length < 1) {
-            return res.status(400).json({
-                message: "No hotels available"
-            });
-        }
-
         const data = [
             {
                 category: "featured Hotels",
